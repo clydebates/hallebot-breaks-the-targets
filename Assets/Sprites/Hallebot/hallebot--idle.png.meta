@@ -1,0 +1,4302 @@
+fileFormatVersion: 2
+guid: edfd1da2e924f481a884ce9ccfef7835
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Halle_front_idle0001
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee25b3d3bd245479597949a463f4e64f
+      internalID: -184426886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0002
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0957eda6e5b374212b90d22ed417b470
+      internalID: 2109169273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0003
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6178c241d45ec440881790c7ba079e45
+      internalID: 1334371864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0004
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8189a4139a4de498eb4ec4fd27bd3abf
+      internalID: -403550731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0005
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab27d3e637034b2b812f8937255f1ab
+      internalID: 1774917616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0006
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 736866754b9c54a838ad56bcefb314a2
+      internalID: -1986919218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0007
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6111d3047f7c414e812153c66d41e1c
+      internalID: -1969016633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0008
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7bc822407cc4b58907f17e9dcd9fa3
+      internalID: 844929462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0009
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a536a57e13644b78117bb5710eca8c
+      internalID: 1273717743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0010
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bb8d4298031843b09df18123b7cfecf
+      internalID: 1622944118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0011
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597a622ee85004c9486171041c46029a
+      internalID: -399246742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0012
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca1d7f60b70f64cd99ebf6f054891817
+      internalID: 1868277855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0013
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c2e0ffca4b04de0a6caa98691b1d39
+      internalID: 293401273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0014
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e737099bc09df4b91a1a2c5e5a0000cd
+      internalID: -323104574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0015
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0232215dbe8b44ed7bf19906ce29594b
+      internalID: 246070644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0016
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b722fa66cd96049ccab3ab18c6137547
+      internalID: -74376509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0017
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61f713e29e074f4094988622d9d4766
+      internalID: 1103644402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0018
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc8f1e241751431fbd7921b39dcd436
+      internalID: -110816975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0019
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b7838fd8ff748b3a2f43a18fe9694e
+      internalID: 1568435266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0020
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d79dcab3dca4c389dc3db361afb256
+      internalID: 161851462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0021
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8822ccd3a2f0488b81c93d9815f9f82
+      internalID: -2107538733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0022
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2004aa68e022d43ce912941a2f8bc6fc
+      internalID: 385126176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0023
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7fee2972207464f9e093c46ba13a84
+      internalID: -1220316675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0024
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1062d573ee441268a42e33906cfac0
+      internalID: 335199443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0025
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2320b2dcad6ec4a058d1435d88befc57
+      internalID: -1669889895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0026
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9f0db2bd3f647139344750124bf06e
+      internalID: -53057629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0027
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f414a2d1f94a4c99a72f1443a6986c0
+      internalID: -1973701718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0028
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e65a45f025bd2439fb28fff7f5c578ac
+      internalID: -129052400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0029
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc474d4af8814a82a3ca06ac499ccb0
+      internalID: 1719096406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0030
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c12cb988e55b492fa6a2db1de0990a7
+      internalID: -2074448758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0031
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c449f38cd26d4114a2d86e613ed6ad2
+      internalID: 1318438791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0032
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8265936debe5848288846c16ea11bd6f
+      internalID: -150292592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0033
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25d7728f76f8c45e29abe9fb7b08acba
+      internalID: 424115592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0034
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43527ad6d10e549e0ada8e23b1c7699f
+      internalID: 55571738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0035
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85952c6a2a7c549c58d379c6c445c57f
+      internalID: -1482544281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0036
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f0d160e53c9c4864927fd167adb9b5c
+      internalID: -2110696162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0037
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20891f4d6bcfb44a0a31d573b15dfbf7
+      internalID: -1614988169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0038
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6f08607cc434be392b4752e225bd6f
+      internalID: -892842627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0039
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6703bd39411674f7c8d48a2dcfcc6006
+      internalID: -587194774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0040
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 162cd40959f104624b2597d3d8dedf4b
+      internalID: 2134764721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0041
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6840bf0a7df5415685b24d3afea55ff
+      internalID: -1503835439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0042
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43a3ccb5aeefd4d4e874a007565e2c90
+      internalID: 1862222973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0043
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b684fa2e460224631a9d6c8ab2d58b96
+      internalID: -2044661379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0044
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491b9414bd3b94098ac0bf4a15157b0b
+      internalID: 1072709742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0045
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20be31d0626464a8cb07664901e55030
+      internalID: 1492194272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0046
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5255ebd87a6b94a7693d63d9c4caff1d
+      internalID: 1893649396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0047
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96731f1507f2240daa983e0acf8c5094
+      internalID: -2050536269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0048
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0571c8f67c7a43768e5dcb9e6c04eeb
+      internalID: -429940256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0049
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e9a84901e7cc4c249d1103aef620a7f
+      internalID: -1458858484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0050
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca34d64560cb43238ed21ba094eb511
+      internalID: -1500192043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0051
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfda2809eee44191a48d544bd9342f6
+      internalID: -1617144881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0052
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ec759de4c954219942da93689334a3
+      internalID: -621823167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0053
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8807606fedf0a48d8917235c0a28eead
+      internalID: -1441636018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0054
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb2a00a9746d145ca9374dbc95f8209b
+      internalID: 399016658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0055
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ffe121438e444088b26116a4f86fbb
+      internalID: 1074728200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0056
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df80cf57858ae48ed8fe19428ef6ba32
+      internalID: -1727401496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0057
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e058925182d64c5e95f8ddce55705c7
+      internalID: 1296448846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0058
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1cb039af87c431bb5d91265bad7772
+      internalID: 1018026652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0059
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f915870fb395401aaded5ac9ed0f131
+      internalID: -2104554471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0059(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13115210dfdd4fdba87d404fc8242e0
+      internalID: -190360002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0060
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e97b5b58b62499cb5110ee5e8c0ecc
+      internalID: 795811197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0061
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56a4d47082c8477eb04de19a6aa2645
+      internalID: 2079252762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0062
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 112d3c982b86f4fa48e058db03a61324
+      internalID: -1812023733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0063
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d7659ae262a4536862ad8c40a4f9a6
+      internalID: -716633658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0064
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 296e6eb163e1e4bf59744e6d8f2bdf8a
+      internalID: -881472099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0065
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 916fc7f6aa98a477e9add8ade05a9661
+      internalID: -2112279273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0065(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa350f632c26b4c848d3bb63a32ac369
+      internalID: -367833681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0066
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fca00d9650bb4955a3a5c7e74401bd1
+      internalID: 1988810766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0067
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8842ab552b08844579b6152aa656397c
+      internalID: 490509483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0068
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90f306a636724e758c7c778fb13e066
+      internalID: 756901361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0069
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92734701bcfcd4cdabf65a1aee806731
+      internalID: 102568354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0070
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f03b496d5914d1eafb4f064eda2945
+      internalID: 1418139848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0071
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67976123fd03e4720a86a245bf68c002
+      internalID: 226433618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0071(1)
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f70c6851d99d4ba0ac3f53eebd2b9bd
+      internalID: -901210163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0072
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 986da586386d44d9bbb42a46ce4dae99
+      internalID: -465201299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0073
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c58e40d5e2f49b99820bd99d850404
+      internalID: 344046843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0074
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374d8dfc0d82c4147acd0b573ff776fb
+      internalID: 535013951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0075
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d669bceb4c14cb7b12b22efb38a0ca
+      internalID: 2099470494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0076
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9509655a94d384cc1a859c35cc406ef6
+      internalID: 34114837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0077
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61b50fbdf76a344059562d3bb9798b73
+      internalID: 10892035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0078
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f9abc217b2241b39ac7416dc9aee3f
+      internalID: -1268383953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0079
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c06a56691bfc4fb697e9d628ee8805b
+      internalID: -240755973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0080
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d0c083a09e54e41a98e7e5d32ed2e8
+      internalID: -621929981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0081
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f62d4b66f0d4c62862ad19ff8f4c84
+      internalID: 1462475908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0082
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a686264b8e33f41b8bb089918f3dab0f
+      internalID: -1032812150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0083
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab761884966e14b949809dfaab9af3fa
+      internalID: 962535413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0084
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88f563cf1f8c64817939361b31678558
+      internalID: -881459911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0085
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec955ce1f0f0e4ef2acb74bcd54a1e2f
+      internalID: 1977871494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0086
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b8de5ac1d644112bc9d3354e24f092
+      internalID: -1505585105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0087
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d7eaf45bb2d4bceaf36bcd3f0cd29d
+      internalID: -333346342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0088
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6238996d474ea47bd83873158158bf50
+      internalID: -577582517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0089
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fad1895b87dee443c833e2a091779d4f
+      internalID: 2045006510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0090
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad6a81a9bb7c648d091dd36fe27d9a13
+      internalID: 1929701743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0091
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636da2275e42c42b0b691463c1d2ddff
+      internalID: 343464575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0092
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7d0c8790d7a4c708457a63e2d32c1c
+      internalID: -1530870955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0093
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c300cf026c7b94285b49b0f98b4e450b
+      internalID: 1041868467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0094
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19294131a4d04821b036684005031c2
+      internalID: 1477958507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0095
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7422e50dd63054345be9db1e2700d541
+      internalID: -996887747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0096
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 784ca0e7c89714cf4a6bf7e4f817fef7
+      internalID: -2121394804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0097
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bcbbf3045f5a49d58dbe22f176f678d
+      internalID: 387244961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0098
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea18d7789faf45548e2b501deb20055
+      internalID: -1864148154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0099
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144e0a71fecd54452b2a633a65ded9d5
+      internalID: -842775746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0100
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9c7768774f48f199d0d34de869c45
+      internalID: 12788786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0101
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71531403b7ce84f38a450b2903e9032e
+      internalID: 1511281384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0102
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e1dd1935defa4347b858f86aba71d2b
+      internalID: 100826009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0103
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2961cee4d2246b2ab331524e987b7e
+      internalID: -1661979690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0104
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827474fd0ac0e49589114a0c14a22dd5
+      internalID: 838674065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0104(1)
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bfe3adde5ec408c951e7363a67f6a8
+      internalID: -2104494729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0105
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b19a62eb15374a5597aeb45dfd292f5
+      internalID: 1490819254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0105(1)
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8d77b6b72c14da2b35e2bd9e929870
+      internalID: -1459819496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0106
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1279b3d8f80cd4ae98d7601e33141c26
+      internalID: 1306271908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0107
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be335bcbbb46e48e3a91ffba18ac0635
+      internalID: -136266950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0108
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611c4eeebf6a64440bcc0d45833aba21
+      internalID: 1859389413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0109
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f08c2459059b4eff9f33b4d1f90dd76
+      internalID: 39574517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0110
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f6536c4118a483a8cbb4ebf89f09ba
+      internalID: 234017294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0110(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931436f6a7fb842e8b8d60496b5436b4
+      internalID: 1110924953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0111
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a58bd403ecf9410ab515fac5a813e63
+      internalID: -1369687530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0111(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad33925cf1f904e40bd10ef974b08c0f
+      internalID: 1598864130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0112
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557f577fb38b84e24acf787086a2816d
+      internalID: 192092902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0113
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5fc6d8289b5740ad90af443bf19e5bc
+      internalID: 1265464222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0114
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8560ee66bf6634cdea092d46e879071b
+      internalID: 655758587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0115
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c7e1c08fb248d196f1fd66d3c31f9
+      internalID: 248575473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0116
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4624d14626cd64094880ce176733385a
+      internalID: 1061066564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0117
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5df0d1165524e069a933321101b36a
+      internalID: 1201586540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0118
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9380464c65edb47b49402cffab921590
+      internalID: 1632027037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0119
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae726cd022b84baea777af860cd47b0
+      internalID: 1614514070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0120
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd796a8edab234e2d93d6795c85fd1dd
+      internalID: -951846617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0121
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e343367dec94b43cc91705909a304104
+      internalID: 549006573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0122
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e15785fb3844015b1da765c39affe3
+      internalID: 1955497964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0123
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbe9e76a79e341f6a9ff4f28f1fd47a
+      internalID: -699776159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0124
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2517ffbc4af48a19a9eb03f07d8863
+      internalID: -1546624916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0125
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b9cfad21d244ff7bd00710af31e5fd
+      internalID: 478895709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0126
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f2cdb7359f1443bba12057a67ff2154
+      internalID: -1954253644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0127
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76ddec1e70554210a704724f031d176
+      internalID: 262976528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0128
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abae54294c4344cb0bdd6351b4af799e
+      internalID: -1806932099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0129
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d970839c2f740adac4e8da7e1b22e8
+      internalID: -1292531942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0130
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695c59420d4e14b098eb4f22274a85f3
+      internalID: -1042484351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0131
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f99bccec22dfe40eca9eeeca7866c2ee
+      internalID: 1136525210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0132
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8e2cfe5a9384af5b540d294b529385
+      internalID: -749595869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0133
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2db9c007e734439984a15fc4246253
+      internalID: 1425527041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0134
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2f20891184b4c5d85fcb658ead0c9d
+      internalID: 1275200830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0135
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdf9060c2c3c4efa9da81ff2ffa0df9
+      internalID: 1755106150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0136
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7203a1301eb45b68a26e6e72e687e3
+      internalID: 1859832137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0137
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b69182c874084ea4800ee1ec3ea5e4f
+      internalID: -384752320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0138
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7b2db457af941ae9b705393aa1d97b
+      internalID: 1482385830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0138(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09c9b3c479abf4cada193bca8bcb6df9
+      internalID: -634777850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0139
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b60b2d6a51dd486bb91ba4bd14e15f1
+      internalID: 2009971160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0139(1)
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29307eda64f3b484382847db57550c8c
+      internalID: 150633798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0140
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c6bf422d935442879b8625e46cb5a5e
+      internalID: -510657358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0141
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56044bf57cc3c438797de13383fc7d18
+      internalID: 187923677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0142
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb446739f670743eeb8866d8021424c2
+      internalID: -2146500810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0143
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0426784e360ea4299aa75322284e2a6d
+      internalID: -2119940460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0144
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25be3e3c596a42fdbc292b571367142
+      internalID: -923506040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0145
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab2e990bb4cb4d7780d800f878498f8
+      internalID: 397093160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0146
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 055300fff39bb44cea9f21e3ec374f8c
+      internalID: 1231248295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0147
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44ad2d595ce44a19bdf0868f72b171f
+      internalID: -1111968303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628fd8f98f0df401eb49bd24717db367
+      internalID: -723757257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0149
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f367f763793b141a8810e40545e8da77
+      internalID: 417896184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0150
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89fe11c9e601845b1a63270280a3eea0
+      internalID: 958547451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0151
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2be014c479d9466592e51776be8752c
+      internalID: -1223099601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0152
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bfa17fd5a884e179c21d6ab4d7b58a
+      internalID: 486501994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0153
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64674db10523c4027a62b8745d15e5e1
+      internalID: 1485802296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0154
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b8c33fb2b5394877806e8f0d15f5e03
+      internalID: 1641977257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0155
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ac532c2ff9a4cf3a385793e4cd7177
+      internalID: -1602140468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0156
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096896c8879c44b35b635ffa596c7124
+      internalID: 711131020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0157
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da13956cb926845bbac974f2cd26ea91
+      internalID: 1946479441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0158
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a97cec511394684a97a02a492aa62f
+      internalID: 1026870133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0159
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b2069d54fc63403a9afbca688165458
+      internalID: 756735703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0160
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4e624661f16347aabb67d9b829f6935
+      internalID: 146765409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0161
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b05938faf6246fa86d987b030caa8f
+      internalID: -1691540870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0162
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea2b088a542747fd8696707c68098c0
+      internalID: -1258399928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0163
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52ec12dcb06c44ccbb2886234ef56a2
+      internalID: 121440319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0164
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f945112dec9414f8da5e9a4969471c
+      internalID: -867414903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0165
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13233f67728fd4be6827f9f4e9f03cbc
+      internalID: 1074378010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0166
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8866ae9a33fa94f5485029f0bf195a9e
+      internalID: 538071332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0167
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dde1a7c0c79d4c00a03861048428a99
+      internalID: 877202588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0168
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f618b0fc1017c40f7aa59955f3b7f8df
+      internalID: 1596588486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0169
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5705f2c74744e4a137832f95e4497
+      internalID: -1226137167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0170
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edeeeb3754fe54756bd072149fc7721f
+      internalID: -1036059996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0171
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfb443f0923864aa3b303250208ac491
+      internalID: 393701963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0172
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fe83a8151744c5183a13fa2f75e8b8
+      internalID: 227879465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0173
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13fee4e7040ab4aa2b0868c3356c0b72
+      internalID: 1153216124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0174
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4aaa9c8b72084c108a8a1f2f1dac712
+      internalID: 778041725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0175
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bdd3568024b8475bb9e0b5e5bf36cc1
+      internalID: 703842631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0176
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7850edc2313d54310a43b9987332c333
+      internalID: -1600956577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0177
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b00f5ab7dd549b3b3a5a1182750fa3
+      internalID: -442020557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0178
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da0119fd7757c437dad965d631845eae
+      internalID: -1906583652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_idle0179
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc322af139dd4d00a636f310a677977
+      internalID: 168084329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f26793f03ad7e4a6ab054f5e050aa53c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Halle_front_idle0001: -184426886
+      Halle_front_idle0002: 2109169273
+      Halle_front_idle0003: 1334371864
+      Halle_front_idle0004: -403550731
+      Halle_front_idle0005: 1774917616
+      Halle_front_idle0006: -1986919218
+      Halle_front_idle0007: -1969016633
+      Halle_front_idle0008: 844929462
+      Halle_front_idle0009: 1273717743
+      Halle_front_idle0010: 1622944118
+      Halle_front_idle0011: -399246742
+      Halle_front_idle0012: 1868277855
+      Halle_front_idle0013: 293401273
+      Halle_front_idle0014: -323104574
+      Halle_front_idle0015: 246070644
+      Halle_front_idle0016: -74376509
+      Halle_front_idle0017: 1103644402
+      Halle_front_idle0018: -110816975
+      Halle_front_idle0019: 1568435266
+      Halle_front_idle0020: 161851462
+      Halle_front_idle0021: -2107538733
+      Halle_front_idle0022: 385126176
+      Halle_front_idle0023: -1220316675
+      Halle_front_idle0024: 335199443
+      Halle_front_idle0025: -1669889895
+      Halle_front_idle0026: -53057629
+      Halle_front_idle0027: -1973701718
+      Halle_front_idle0028: -129052400
+      Halle_front_idle0029: 1719096406
+      Halle_front_idle0030: -2074448758
+      Halle_front_idle0031: 1318438791
+      Halle_front_idle0032: -150292592
+      Halle_front_idle0033: 424115592
+      Halle_front_idle0034: 55571738
+      Halle_front_idle0035: -1482544281
+      Halle_front_idle0036: -2110696162
+      Halle_front_idle0037: -1614988169
+      Halle_front_idle0038: -892842627
+      Halle_front_idle0039: -587194774
+      Halle_front_idle0040: 2134764721
+      Halle_front_idle0041: -1503835439
+      Halle_front_idle0042: 1862222973
+      Halle_front_idle0043: -2044661379
+      Halle_front_idle0044: 1072709742
+      Halle_front_idle0045: 1492194272
+      Halle_front_idle0046: 1893649396
+      Halle_front_idle0047: -2050536269
+      Halle_front_idle0048: -429940256
+      Halle_front_idle0049: -1458858484
+      Halle_front_idle0050: -1500192043
+      Halle_front_idle0051: -1617144881
+      Halle_front_idle0052: -621823167
+      Halle_front_idle0053: -1441636018
+      Halle_front_idle0054: 399016658
+      Halle_front_idle0055: 1074728200
+      Halle_front_idle0056: -1727401496
+      Halle_front_idle0057: 1296448846
+      Halle_front_idle0058: 1018026652
+      Halle_front_idle0059: -2104554471
+      Halle_front_idle0059(1): -190360002
+      Halle_front_idle0060: 795811197
+      Halle_front_idle0061: 2079252762
+      Halle_front_idle0062: -1812023733
+      Halle_front_idle0063: -716633658
+      Halle_front_idle0064: -881472099
+      Halle_front_idle0065: -2112279273
+      Halle_front_idle0065(1): -367833681
+      Halle_front_idle0066: 1988810766
+      Halle_front_idle0067: 490509483
+      Halle_front_idle0068: 756901361
+      Halle_front_idle0069: 102568354
+      Halle_front_idle0070: 1418139848
+      Halle_front_idle0071: 226433618
+      Halle_front_idle0071(1): -901210163
+      Halle_front_idle0072: -465201299
+      Halle_front_idle0073: 344046843
+      Halle_front_idle0074: 535013951
+      Halle_front_idle0075: 2099470494
+      Halle_front_idle0076: 34114837
+      Halle_front_idle0077: 10892035
+      Halle_front_idle0078: -1268383953
+      Halle_front_idle0079: -240755973
+      Halle_front_idle0080: -621929981
+      Halle_front_idle0081: 1462475908
+      Halle_front_idle0082: -1032812150
+      Halle_front_idle0083: 962535413
+      Halle_front_idle0084: -881459911
+      Halle_front_idle0085: 1977871494
+      Halle_front_idle0086: -1505585105
+      Halle_front_idle0087: -333346342
+      Halle_front_idle0088: -577582517
+      Halle_front_idle0089: 2045006510
+      Halle_front_idle0090: 1929701743
+      Halle_front_idle0091: 343464575
+      Halle_front_idle0092: -1530870955
+      Halle_front_idle0093: 1041868467
+      Halle_front_idle0094: 1477958507
+      Halle_front_idle0095: -996887747
+      Halle_front_idle0096: -2121394804
+      Halle_front_idle0097: 387244961
+      Halle_front_idle0098: -1864148154
+      Halle_front_idle0099: -842775746
+      Halle_front_idle0100: 12788786
+      Halle_front_idle0101: 1511281384
+      Halle_front_idle0102: 100826009
+      Halle_front_idle0103: -1661979690
+      Halle_front_idle0104: 838674065
+      Halle_front_idle0104(1): -2104494729
+      Halle_front_idle0105: 1490819254
+      Halle_front_idle0105(1): -1459819496
+      Halle_front_idle0106: 1306271908
+      Halle_front_idle0107: -136266950
+      Halle_front_idle0108: 1859389413
+      Halle_front_idle0109: 39574517
+      Halle_front_idle0110: 234017294
+      Halle_front_idle0110(1): 1110924953
+      Halle_front_idle0111: -1369687530
+      Halle_front_idle0111(1): 1598864130
+      Halle_front_idle0112: 192092902
+      Halle_front_idle0113: 1265464222
+      Halle_front_idle0114: 655758587
+      Halle_front_idle0115: 248575473
+      Halle_front_idle0116: 1061066564
+      Halle_front_idle0117: 1201586540
+      Halle_front_idle0118: 1632027037
+      Halle_front_idle0119: 1614514070
+      Halle_front_idle0120: -951846617
+      Halle_front_idle0121: 549006573
+      Halle_front_idle0122: 1955497964
+      Halle_front_idle0123: -699776159
+      Halle_front_idle0124: -1546624916
+      Halle_front_idle0125: 478895709
+      Halle_front_idle0126: -1954253644
+      Halle_front_idle0127: 262976528
+      Halle_front_idle0128: -1806932099
+      Halle_front_idle0129: -1292531942
+      Halle_front_idle0130: -1042484351
+      Halle_front_idle0131: 1136525210
+      Halle_front_idle0132: -749595869
+      Halle_front_idle0133: 1425527041
+      Halle_front_idle0134: 1275200830
+      Halle_front_idle0135: 1755106150
+      Halle_front_idle0136: 1859832137
+      Halle_front_idle0137: -384752320
+      Halle_front_idle0138: 1482385830
+      Halle_front_idle0138(1): -634777850
+      Halle_front_idle0139: 2009971160
+      Halle_front_idle0139(1): 150633798
+      Halle_front_idle0140: -510657358
+      Halle_front_idle0141: 187923677
+      Halle_front_idle0142: -2146500810
+      Halle_front_idle0143: -2119940460
+      Halle_front_idle0144: -923506040
+      Halle_front_idle0145: 397093160
+      Halle_front_idle0146: 1231248295
+      Halle_front_idle0147: -1111968303
+      Halle_front_idle0148: -723757257
+      Halle_front_idle0149: 417896184
+      Halle_front_idle0150: 958547451
+      Halle_front_idle0151: -1223099601
+      Halle_front_idle0152: 486501994
+      Halle_front_idle0153: 1485802296
+      Halle_front_idle0154: 1641977257
+      Halle_front_idle0155: -1602140468
+      Halle_front_idle0156: 711131020
+      Halle_front_idle0157: 1946479441
+      Halle_front_idle0158: 1026870133
+      Halle_front_idle0159: 756735703
+      Halle_front_idle0160: 146765409
+      Halle_front_idle0161: -1691540870
+      Halle_front_idle0162: -1258399928
+      Halle_front_idle0163: 121440319
+      Halle_front_idle0164: -867414903
+      Halle_front_idle0165: 1074378010
+      Halle_front_idle0166: 538071332
+      Halle_front_idle0167: 877202588
+      Halle_front_idle0168: 1596588486
+      Halle_front_idle0169: -1226137167
+      Halle_front_idle0170: -1036059996
+      Halle_front_idle0171: 393701963
+      Halle_front_idle0172: 227879465
+      Halle_front_idle0173: 1153216124
+      Halle_front_idle0174: 778041725
+      Halle_front_idle0175: 703842631
+      Halle_front_idle0176: -1600956577
+      Halle_front_idle0177: -442020557
+      Halle_front_idle0178: -1906583652
+      Halle_front_idle0179: 168084329
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 6704f555706634fff8f362ccd0b786f5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Halle_side2_duck0001
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1efa3f6c7ddf94ac5a6e464db8a07494
+      internalID: 112942432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0002
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eca2ecf819d8432b90c8e69fc3f9116
+      internalID: 629732835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0003
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6f14c9b96a54f8595c38563cb83a12
+      internalID: 867153518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0004
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae630cd2c0f1418a80c66750f0569a7
+      internalID: -340784667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0005
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ef46c448624497ebb0e8f7a4acc9ee
+      internalID: -1676800614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0006
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be6c563e1fd94e51b200a6eff2e72a8
+      internalID: -1857603383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0007
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7d8c252b3204d9dbb6098607bc55c3
+      internalID: 1785787745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0008
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa50a961a58a94824af5d4f721885dbb
+      internalID: 2130155550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0009
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889daaaae86a74fc5bc72f63ec23ea04
+      internalID: 606820753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0010
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52b6b03ecace4fdbac559a0ffeb083b
+      internalID: -690403230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0011
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfe59ad1eb5d84197ab081b5a4150d17
+      internalID: -156944730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0012
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e4309ede040481eb8b331d9030213a
+      internalID: -944696994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0013
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9a6ec2ea54484498be339be0b8cf787
+      internalID: 1071400345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0014
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7779cd39924e4e649e3aa3612f59620
+      internalID: 100830686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0015
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357cbe7c7db2440929288882ab51c910
+      internalID: -1215599760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0016
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba65112672fb483ab04cc7d64c71e4c
+      internalID: -1373243263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0017
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf153a63b37643059b15c89431962d3
+      internalID: 1113604431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_duck0018
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4e9499433d0841faa8dedb924597f6d
+      internalID: 1813212624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0001
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1854e132cc4c869c066b02c0ad4ad
+      internalID: 81557385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0002
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a9d1fa962ba411293c15d3a769413f
+      internalID: -1092634293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0003
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f829e8227f742d888131612581ffcc
+      internalID: -1634116487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0004
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28a4e91b14f6e48ffb24fe9cb03b2e8b
+      internalID: -55008853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0005
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47855073671724fd3ab7fd36ddf62bce
+      internalID: 2104825192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0006
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05d54940c721405a96dcd2ffb2a5239
+      internalID: -493046527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_ant0007
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cd1d1874bff4479a64b110f737b264
+      internalID: -1721868160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0001
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2a14f12dcae4f64acc92b30c8c1b21
+      internalID: -556417915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0002
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246d702921ace49569bb6b94d586dd84
+      internalID: 1188335227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0003
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2945cb2155879447fb440ef1fb1bae9b
+      internalID: 330508323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0004
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0af63d0ef8f434f906b772f8d2682c
+      internalID: -323302048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 166
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18493c8e520a94746946cd1cdcfffe38
+      internalID: 35079371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 435
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754b921b0214f4a4fa8391c16d019f54
+      internalID: 471032118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 704
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b012b264b0b40b3b54395e48076b42
+      internalID: 1651926520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 973
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f0e4b665efd43d5a362bcdf278829e
+      internalID: -2010470755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0009
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1242
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5d7a8b7154d47d4beeed570ce97efe
+      internalID: 1544587493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0010
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1511
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d52ea28fa7448909f3cbf112f30df8
+      internalID: 943323285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0011
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e401add50544bce84f23848e88d202
+      internalID: -711524372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0012
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342e3503aeaa34261ad327ba1461a6f3
+      internalID: 1641582249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0013
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2afd23736ccf34f9e8c100e3da880ee8
+      internalID: 456493815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0014
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dd9183d86b149d99d4aafebf9297ce
+      internalID: -1167788771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0015
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3668f5df0051443769184e050754d8fb
+      internalID: -291714407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_side2_fly_land0016
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1780
+        width: 336
+        height: 267
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e46acdd0b5faf4d78a6a955796523fc3
+      internalID: -764693884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1af62dc35b8c8435eb3f41011f93692b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Halle_side2_duck0001: 112942432
+      Halle_side2_duck0002: 629732835
+      Halle_side2_duck0003: 867153518
+      Halle_side2_duck0004: -340784667
+      Halle_side2_duck0005: -1676800614
+      Halle_side2_duck0006: -1857603383
+      Halle_side2_duck0007: 1785787745
+      Halle_side2_duck0008: 2130155550
+      Halle_side2_duck0009: 606820753
+      Halle_side2_duck0010: -690403230
+      Halle_side2_duck0011: -156944730
+      Halle_side2_duck0012: -944696994
+      Halle_side2_duck0013: 1071400345
+      Halle_side2_duck0014: 100830686
+      Halle_side2_duck0015: -1215599760
+      Halle_side2_duck0016: -1373243263
+      Halle_side2_duck0017: 1113604431
+      Halle_side2_duck0018: 1813212624
+      Halle_side2_fly_ant0001: 81557385
+      Halle_side2_fly_ant0002: -1092634293
+      Halle_side2_fly_ant0003: -1634116487
+      Halle_side2_fly_ant0004: -55008853
+      Halle_side2_fly_ant0005: 2104825192
+      Halle_side2_fly_ant0006: -493046527
+      Halle_side2_fly_ant0007: -1721868160
+      Halle_side2_fly_land0001: -556417915
+      Halle_side2_fly_land0002: 1188335227
+      Halle_side2_fly_land0003: 330508323
+      Halle_side2_fly_land0004: -323302048
+      Halle_side2_fly_land0005: 35079371
+      Halle_side2_fly_land0006: 471032118
+      Halle_side2_fly_land0007: 1651926520
+      Halle_side2_fly_land0008: -2010470755
+      Halle_side2_fly_land0009: 1544587493
+      Halle_side2_fly_land0010: 943323285
+      Halle_side2_fly_land0011: -711524372
+      Halle_side2_fly_land0012: 1641582249
+      Halle_side2_fly_land0013: 456493815
+      Halle_side2_fly_land0014: -1167788771
+      Halle_side2_fly_land0015: -291714407
+      Halle_side2_fly_land0016: -764693884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

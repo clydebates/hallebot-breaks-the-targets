@@ -1,0 +1,32 @@
+version: 2
+tpsheetFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Sprites/Hallebot/hallebot--climb.tpsheet
+- Assets/Sprites/Hallebot/hallebot--die-front.tpsheet
+- Assets/Sprites/Hallebot/hallebot--die-front-2.tpsheet
+- Assets/Sprites/Hallebot/hallebot--idle.tpsheet
+- Assets/Sprites/Hallebot/hallebot--jump-duck.tpsheet
+- Assets/Sprites/Hallebot/hallebot--run.tpsheet
+- Assets/Sprites/Hallebot/hallebot--shoot.tpsheet
+- Assets/Sprites/Hallebot/hallebot--walk.tpsheet
+textureFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Sprites/Hallebot/hallebot--climb.png
+- Assets/Sprites/Hallebot/hallebot--die-front.png
+- Assets/Sprites/Hallebot/hallebot--die-front-2.png
+- Assets/Sprites/Hallebot/hallebot--idle.png
+- Assets/Sprites/Hallebot/hallebot--jump-duck.png
+- Assets/Sprites/Hallebot/hallebot--run.png
+- Assets/Sprites/Hallebot/hallebot--shoot.png
+- Assets/Sprites/Hallebot/hallebot--walk.png
+normalmapFileNames:
+- Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+enableDebugOutput: 0

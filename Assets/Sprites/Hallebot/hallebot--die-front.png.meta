@@ -1,0 +1,870 @@
+fileFormatVersion: 2
+guid: 12a843b1a5d3a40a2a6a80eb61f70f01
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Halle_front_death0001
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 239
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532ef47308dd94bd9991c06799623a24
+      internalID: -575112947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0002
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 508
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a37f830b9e2c4f1ba703fb4e6947786
+      internalID: 685301271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0003
+      rect:
+        serializedVersion: 2
+        x: 1018
+        y: 131
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3348cb0c29fa74a66ac409d4985c105f
+      internalID: -4148814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0004
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 973
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758ea866c10c1409cac642b7a2924913
+      internalID: -649220399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0005
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1242
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8782ecd75e4c94118ab4d91e08c81205
+      internalID: 654008893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0006
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1511
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4dbe72c286d345e8b2f2b2f3b1694dd
+      internalID: 1057698350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0007
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1242
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64be21ac70b95434f97a4a719ffd6135
+      internalID: -1625498085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0008
+      rect:
+        serializedVersion: 2
+        x: 1706
+        y: 1780
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab0a219b9df4e41c3838df78e0a22b98
+      internalID: -878958670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0009
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1140
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631415cebd63b4bf3934a1ce0227cbf0
+      internalID: -313065302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0010
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 15
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abc570a928e942ed81ba3e909ce3e33
+      internalID: -1685456917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0011
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 7
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e6439b6ba5b4fa29d1e3ff33d7c253
+      internalID: 606922961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0012
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 7
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3531777c7a0dc4cf2b56f5c20fb96046
+      internalID: -1018720758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0013
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 15
+        width: 337
+        height: 267
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d421ef386074b81bf253a9e38d3b50
+      internalID: -535256708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0014
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 777
+        width: 337
+        height: 282
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5265958}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56aae493e6034900bc22f428e016553
+      internalID: -1177620824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0015
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 400
+        width: 337
+        height: 291
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5412371}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3f9fd1c45664fc5bf401dc083c0df2
+      internalID: -2129791851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0016
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1746
+        width: 337
+        height: 301
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5564784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e1a5fd3ad2a4d92b88c857052a9ca6
+      internalID: 1105500859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0017
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 1409
+        width: 337
+        height: 309
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.56796116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c2cd0c5f80441fda23a66a397ffeca
+      internalID: 1107483702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0018
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 1061
+        width: 337
+        height: 311
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.57073957}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6836788a30b43d994b1223f8810cc1
+      internalID: 703377638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0019
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 693
+        width: 337
+        height: 320
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5828125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b606e817db8547cd9793e3dac4e71b3
+      internalID: -1029068167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0020
+      rect:
+        serializedVersion: 2
+        x: 694
+        y: 1720
+        width: 337
+        height: 327
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5917431}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6220ed14d0ed44312922a6547e320271
+      internalID: 1441137910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0021
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 1374
+        width: 337
+        height: 333
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5990991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ed74e8218354c029d09f7b51fbd1a9
+      internalID: -1444169362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0022
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 1015
+        width: 337
+        height: 333
+      alignment: 9
+      pivot: {x: 0.49851632, y: 0.5990991}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daf4dc9ed34474aa8a906cc4e92912c6
+      internalID: -1771203006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0023
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 1350
+        width: 343
+        height: 339
+      alignment: 9
+      pivot: {x: 0.48979592, y: 0.6061947}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca340c521be5047dbbf2be0eac628ba7
+      internalID: -2136114016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0024
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 980
+        width: 343
+        height: 353
+      alignment: 9
+      pivot: {x: 0.48979592, y: 0.62181306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6583da6d1a6747bd9d43bef60de1bc1
+      internalID: -329277386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0025
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 625
+        width: 341
+        height: 353
+      alignment: 9
+      pivot: {x: 0.49266863, y: 0.62181306}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4e3cbf54dbd4d6fbfffeef8366ed77
+      internalID: 2147332673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0026
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 990
+        width: 341
+        height: 343
+      alignment: 9
+      pivot: {x: 0.49266863, y: 0.61078715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2cd66a985b154630ad62146a5434ecb
+      internalID: -768166283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0027
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 276
+        width: 345
+        height: 347
+      alignment: 9
+      pivot: {x: 0.4869565, y: 0.6152738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8378345511af4cd68811111771289ed
+      internalID: 248175887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0028
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1691
+        width: 345
+        height: 356
+      alignment: 9
+      pivot: {x: 0.4869565, y: 0.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dd85444eda249338cf5355e3e04338
+      internalID: 1750449934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0029
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1709
+        width: 344
+        height: 338
+      alignment: 9
+      pivot: {x: 0.4883721, y: 0.6050296}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7994e6446454ad3ab3e73de1a0467a
+      internalID: -941082173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0030
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 284
+        width: 343
+        height: 345
+      alignment: 9
+      pivot: {x: 0.48979592, y: 0.6130435}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eaf524627e274ed9b3c41eb74c9b188
+      internalID: -137010858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0031
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 631
+        width: 344
+        height: 347
+      alignment: 9
+      pivot: {x: 0.4883721, y: 0.6152738}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caf9fe8ba2ff34ce69758facae64e7c1
+      internalID: -1371014270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Halle_front_death0032
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1335
+        width: 344
+        height: 354
+      alignment: 9
+      pivot: {x: 0.4883721, y: 0.62288135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb52b4663f6944989fd281c7e7aae86
+      internalID: 1079503172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 39245b29105c8416ea240c7b4819165b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Halle_front_death0001: -575112947
+      Halle_front_death0002: 685301271
+      Halle_front_death0003: -4148814
+      Halle_front_death0004: -649220399
+      Halle_front_death0005: 654008893
+      Halle_front_death0006: 1057698350
+      Halle_front_death0007: -1625498085
+      Halle_front_death0008: -878958670
+      Halle_front_death0009: -313065302
+      Halle_front_death0010: -1685456917
+      Halle_front_death0011: 606922961
+      Halle_front_death0012: -1018720758
+      Halle_front_death0013: -535256708
+      Halle_front_death0014: -1177620824
+      Halle_front_death0015: -2129791851
+      Halle_front_death0016: 1105500859
+      Halle_front_death0017: 1107483702
+      Halle_front_death0018: 703377638
+      Halle_front_death0019: -1029068167
+      Halle_front_death0020: 1441137910
+      Halle_front_death0021: -1444169362
+      Halle_front_death0022: -1771203006
+      Halle_front_death0023: -2136114016
+      Halle_front_death0024: -329277386
+      Halle_front_death0025: 2147332673
+      Halle_front_death0026: -768166283
+      Halle_front_death0027: 248175887
+      Halle_front_death0028: 1750449934
+      Halle_front_death0029: -941082173
+      Halle_front_death0030: -137010858
+      Halle_front_death0031: -1371014270
+      Halle_front_death0032: 1079503172
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
