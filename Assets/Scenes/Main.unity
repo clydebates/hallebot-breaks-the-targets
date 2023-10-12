@@ -860,7 +860,6 @@ GameObject:
   - component: {fileID: 795688352}
   - component: {fileID: 795688354}
   - component: {fileID: 795688356}
-  - component: {fileID: 795688357}
   m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
@@ -933,7 +932,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1263329819}
   - {fileID: 1429725}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1091,7 +1089,7 @@ MonoBehaviour:
     m_ActionName: Player/Look[/Mouse/delta,/Pen/delta]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 795688357}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FireController, Assembly-CSharp
         m_MethodName: OnFire
         m_Mode: 0
@@ -1183,22 +1181,6 @@ MonoBehaviour:
   antiGravity: 7
   rateOfAcceleration: 5
   snapBackRate: 0.3
---- !u!114 &795688357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795688348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a40dc70c26144ae0870c3f1933213f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xVelocity: 20
-  lifespan: 2
-  fireSpawnPoint: {fileID: 1263329818}
-  prefabFireBall: {fileID: 5772516789658028870, guid: 59ef79d6bdfe446098b79610a103d938, type: 3}
 --- !u!1 &866880051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1715,37 +1697,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 732ebd36a52b142bb8158ff69f857c0a, type: 3}
---- !u!1 &1263329818
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1263329819}
-  m_Layer: 6
-  m_Name: FireSpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1263329819
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1263329818}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66, y: -0.62, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 795688350}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1268678023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,8 +2680,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.004450083, y: -0.0014500618, z: 0}
-    m_Extent: {x: 4.7789497, y: 4.78625, z: 0}
+    m_Center: {x: -0.0066998005, y: -0.004099846, z: 0}
+    m_Extent: {x: 4.7820997, y: 4.7813, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
