@@ -13,7 +13,7 @@ TagManager:
   - UI
   - Player
   - Platform
-  - 
+  - Background
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Horizon
+    uniqueID: 34036837
+    locked: 0
+  - name: Background
+    uniqueID: 103939377
+    locked: 0
+  - name: Platform
+    uniqueID: 96287697
+    locked: 0
+  - name: Player
+    uniqueID: 559948937
+    locked: 0
+  - name: Projectile
+    uniqueID: 646108735
     locked: 0

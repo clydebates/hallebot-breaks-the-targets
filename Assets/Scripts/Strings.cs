@@ -5,8 +5,11 @@ namespace OpSpark
         public const string HORIZONTAL = "Horizontal";
         public const string VERTICAL = "Vertical";
 
+        // ANIMATION BOOLS //
         public const string IS_RUNNING = "isRunning";
         public const string IS_JUMPING = "isJumping";
-        public const string JUMP = "jump";
+
+        // ANIMATION TRIGGERS //
+        public const string FIRE = "fire";
     }
 }
