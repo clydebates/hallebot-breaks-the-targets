@@ -13,6 +13,8 @@ public class JumpController : MonoBehaviour
     [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
 
     bool isPressed = false;
+    int jumpCount = 0;
+    int jumpEndedCount = 0;
     Vector2 defaultGravity;
     
     float duration = 0;
@@ -40,12 +42,10 @@ public class JumpController : MonoBehaviour
     private void FixedUpdate()
     {
         // TODO: update y velocity on what conditions? //
-        if(isPressed && isTouchingPlatform())
+        if(IsTouchingPlatform() && isPressed)
         {
-            duration = 0;
-            animator.SetBool(Strings.IS_JUMPING, true);
-            float toY = jumpForce;
-            rb.velocity = new Vector2(rb.velocity.x, toY);
+            PerformJump();
+            jumpCount++;
         }
 
         // TODO: update rate of return to platform //
@@ -53,7 +53,14 @@ public class JumpController : MonoBehaviour
         {
             // we're falling //
             rb.velocity -= defaultGravity * rateOfAcceleration * Time.deltaTime;
+            if (isPressed && jumpCount < 2 && jumpEndedCount > 0)
+            {
+                // double jump
+                PerformJump();
+                jumpCount++;
+            }
         }
+
 
         // TODO: jump higher while key pressed //
         if(isPressed && rb.velocity.y > 0)
@@ -86,6 +93,14 @@ public class JumpController : MonoBehaviour
         }
     }
 
+    private void PerformJump() 
+    {
+        duration = 0;
+        animator.SetBool(Strings.IS_JUMPING, true);
+        float toY = jumpForce;
+        rb.velocity = new Vector2(rb.velocity.x, toY);
+    }
+
     public void OnJump(InputAction.CallbackContext context)
     {
         if (context.started)
@@ -102,12 +117,18 @@ public class JumpController : MonoBehaviour
         {
             // jump should end //
             isPressed = false;
+            jumpEndedCount++;
         }
-        //Debug.Log($"isPressed : {isPressed}");
     }
 
-    private bool isTouchingPlatform()
+    private bool IsTouchingPlatform()
     {
-        return feet.IsTouchingLayers(LayerMask.GetMask("Platform"));
+        if (feet.IsTouchingLayers(LayerMask.GetMask("Platform"))) 
+        {
+            jumpEndedCount = 0;
+            jumpCount = 0;
+            return true;
+        }
+        return false;
     }
 }

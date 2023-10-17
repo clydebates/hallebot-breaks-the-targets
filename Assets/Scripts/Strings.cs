@@ -10,6 +10,7 @@ namespace OpSpark
         public const string IS_JUMPING = "isJumping";
 
         // ANIMATION TRIGGERS //
+        public const string FIRE = "fire";
         
     }
 }

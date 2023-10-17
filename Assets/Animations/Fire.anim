@@ -163,14 +163,14 @@ AnimationClip:
   - time: 1
     functionName: OnFireAway
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 0a40dc70c26144ae0870c3f1933213f6, type: 3}
+    objectReferenceParameter: {fileID: 11500000, guid: 74b085eec0ca74ec8996c5bbf49f9f13, type: 3}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
   - time: 2.5
     functionName: OnAnimationEnd
     data: 
-    objectReferenceParameter: {fileID: 11500000, guid: 0a40dc70c26144ae0870c3f1933213f6, type: 3}
+    objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
