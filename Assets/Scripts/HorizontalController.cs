@@ -18,12 +18,14 @@ public class HorizontalController : MonoBehaviour
 
     // COMPONENTS //
     Rigidbody2D rb;
+    BoxCollider2D bc;
     Animator animator;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        bc = GetComponent<BoxCollider2D>();
     }
 
     private void Update()
@@ -39,6 +41,11 @@ public class HorizontalController : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision.gameObject.name);
+    }
+
     /*
      * BONUS TODO: Improve: Could you AddForce(), instead? Tweak all parameters...
      */
@@ -49,9 +56,6 @@ public class HorizontalController : MonoBehaviour
         rb.velocity = new Vector2(toX, rb.velocity.y);
     }
 
-    /*
-     * TODO: Improve: Avoid up/down arrows triggering horizontal movement!
-     */
     private void UpdateAcceleration()
     {
         if(isPressed && acceleration < 1)
@@ -63,6 +67,15 @@ public class HorizontalController : MonoBehaviour
             acceleration -= Time.deltaTime * rateOfAcceleration;
             if (acceleration < 0) acceleration = 0;
         }
+        else if (IsTouchingWall())
+        {
+            acceleration = 0;
+        }
+    }
+
+    private bool IsTouchingWall() 
+    {
+        return bc.IsTouchingLayers(LayerMask.GetMask("Wall"));
     }
 
     /*
