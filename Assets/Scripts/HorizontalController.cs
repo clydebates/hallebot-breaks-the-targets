@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using OpSpark;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -69,36 +70,29 @@ public class HorizontalController : MonoBehaviour
      */
     public void OnMove(InputAction.CallbackContext context)
     {
-        if(context.started)
+        string[] horizontalInputs = {"leftArrow", "rightArrow", "a", "d"};
+        if (horizontalInputs.Contains(context.control.name))
         {
-            // intent to move //
-            isPressed = true;
-        }
-        else if(context.performed)
-        {
-            // movement is happening //
-            isPressed = true;
-        }
-        else if (context.canceled)
-        {
-            // movement should end //
-            isPressed = false;
-        }
-        //Debug.Log($"isPressed : {isPressed}");
-
-        /*
-         * The Move action produces a Vector2 (x, y), registering x and y axis input.
-         */ 
-        inputMovement = context.ReadValue<Vector2>();
-        //Debug.Log($"inputMovement : {inputMovement}");
-        switch (inputMovement.x)
-        {
-            case > 0:
-                direction = 1;
-                break;
-            case < 0:
-                direction = -1;
-                break;
+            if(context.started)
+            {
+                // intent to move //
+                isPressed = true;
+            }
+            else if(context.performed)
+            {
+                // movement is happening //
+                isPressed = true;
+            }
+            else if (context.canceled)
+            {
+                // movement should end //
+                isPressed = false;
+            }
+            /*
+            * The Move action produces a Vector2 (x, y), registering x and y axis input.
+            */ 
+            inputMovement = context.ReadValue<Vector2>();
+            direction = inputMovement.x > 0 ? 1 : -1;
         }
     }
 }
