@@ -28,7 +28,6 @@ public class FireController : Projectile
 
     //fired from the Animator   
     public void OnFireAway() {
-        Debug.Log("OnFireAway.......");
         // instantiate prefab
         GameObject projectile = Instantiate(
             prefabFireball, 

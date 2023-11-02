@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 1483300542633638104}
   - component: {fileID: 4564430471475554366}
   - component: {fileID: 3444273117045419349}
+  - component: {fileID: 5971972262297781219}
   m_Layer: 0
   m_Name: FireBallBlue
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 646108735
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9693aecc92bae4cb5be5eb0427c9dad5, type: 3}
   m_Color: {r: 0.9388375, g: 0.35292807, b: 0.9716981, a: 1}
@@ -112,7 +113,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &3444273117045419349
 MonoBehaviour:
@@ -126,6 +127,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 978bd27355b604ec3815f0768e9c9a56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &5971972262297781219
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779337904253830704}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.013651848, y: 0}
+  serializedVersion: 2
+  m_Radius: 6.2698603
 --- !u!1 &5895885261949916880
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,8 +228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.44985002, y: -0.052850038, z: 0}
-    m_Extent: {x: 1.4841499, y: 1.04015, z: 0}
+    m_Center: {x: -0.4694, y: -0.04675001, z: 0}
+    m_Extent: {x: 1.5102999, y: 1.0446501, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

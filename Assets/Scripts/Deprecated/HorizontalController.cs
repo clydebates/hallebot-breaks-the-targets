@@ -13,6 +13,7 @@ public class HorizontalController : MonoBehaviour
     float acceleration;
     float direction = 1f;
     bool isPressed = false;
+    bool isOnWall = false;
 
     Vector2 inputMovement;
 
@@ -41,9 +42,9 @@ public class HorizontalController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.name);
+        isOnWall = collision.gameObject.name == "Wall";
     }
 
     /*
@@ -54,6 +55,10 @@ public class HorizontalController : MonoBehaviour
         UpdateAcceleration();
         float toX = rateOfMovement * acceleration * direction;
         rb.velocity = new Vector2(toX, rb.velocity.y);
+        if (isPressed && isOnWall) {
+            rb.velocity = new Vector2(0, 0);
+            rb.gravityScale = 0;
+        }
     }
 
     private void UpdateAcceleration()
@@ -67,15 +72,10 @@ public class HorizontalController : MonoBehaviour
             acceleration -= Time.deltaTime * rateOfAcceleration;
             if (acceleration < 0) acceleration = 0;
         }
-        else if (IsTouchingWall())
+        else if (isOnWall)
         {
             acceleration = 0;
         }
-    }
-
-    private bool IsTouchingWall() 
-    {
-        return bc.IsTouchingLayers(LayerMask.GetMask("Wall"));
     }
 
     /*

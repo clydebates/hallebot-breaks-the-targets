@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -14,7 +15,7 @@ TagManager:
   - Player
   - Platform
   - Background
-  - 
+  - Wall
   - 
   - 
   - 
@@ -50,9 +51,15 @@ TagManager:
   - name: Platform
     uniqueID: 96287697
     locked: 0
+  - name: Wall
+    uniqueID: 2091726495
+    locked: 0
   - name: Player
     uniqueID: 559948937
     locked: 0
   - name: Projectile
     uniqueID: 646108735
+    locked: 0
+  - name: Target
+    uniqueID: 3381462951
     locked: 0
