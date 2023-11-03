@@ -86,8 +86,14 @@ public class PlayerController : MonoBehaviour, ICharacter
 
         if (inputMovement.x != 0)
         {
-          isMovePressed = context.started || context.performed;
-          Run();
+          if(context.started)
+          {
+            isMovePressed = true;
+          }
+          else if (context.performed)
+          {
+            isMovePressed = true;
+          }
         }
 
         if (context.canceled)
@@ -103,7 +109,6 @@ public class PlayerController : MonoBehaviour, ICharacter
       if (context.started)
       {
         isJumpPressed = true;
-        Jump();
       }
       else if (context.performed)
       {
@@ -120,7 +125,6 @@ public class PlayerController : MonoBehaviour, ICharacter
       if (context.started)
       {
         isFirePressed = true;
-        Fire();
       }
       else if (context.performed)
       {
@@ -149,9 +153,10 @@ public class PlayerController : MonoBehaviour, ICharacter
       Destroy(projectile, 2f);
     }
 
+    // TODO: Not needed?
     public void OnAnimationEnd(string name)
     {
-      state.OnAnimationEnd(name);
+      // state.OnAnimationEnd(name);
     }
 
     public void SetState(ICharacterState state)
@@ -159,31 +164,5 @@ public class PlayerController : MonoBehaviour, ICharacter
         this.state.Exit();
         this.state = state;
         this.state.Enter();
-    }
-
-    // delegate to current state
-    void Idle()
-    {
-        this.state.Idle();
-    }
-
-    void Run()
-    {
-        this.state.Run();
-    }
-
-    void Jump()
-    {
-        this.state.Jump();
-    }
-
-    void Fire()
-    {
-        this.state.Fire();
-    }
-
-    void Climb()
-    {
-        this.state.Climb();
     }
 }

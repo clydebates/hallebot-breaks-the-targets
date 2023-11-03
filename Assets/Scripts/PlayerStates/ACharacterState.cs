@@ -58,22 +58,35 @@ namespace OpSpark
 
     public virtual void Update()
     {
+      // TODO: all state switching should happen here
       // switch states depending on the input action
-    //   string inputName = character.InputAction.control?.name;
-    //   if (_horizontalInputs.Contains(inputName))
-    //   {
-    //     Run();
-    //   }
-    //   else if (_jumpInputs.Equals(inputName))
-    //   {
-    //     Jump();
-    //   }
-    //   else
-    //   {
-    //     Idle();
-    //   }
+      if (character.IsMovePressed && character.IsJumpPressed)
+      {
+        Jump();
+      }
+      else if (character.IsMovePressed && character.IsFirePressed)
+      {
+        Fire();
+      }
+      else if (character.IsMovePressed)
+      {
+        Run();
+      }
+      else if (character.IsJumpPressed)
+      {
+        Jump();
+      }
+      else if (character.IsFirePressed)
+      {
+        Fire();
+      }
+      else
+      {
+        Idle();
+      }
     }
 
+    // TODO: not needed?
     public virtual void OnAnimationEnd(string name)
     {
       Debug.Log($"Animation {name} ended");

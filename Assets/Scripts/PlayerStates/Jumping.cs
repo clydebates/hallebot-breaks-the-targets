@@ -1,7 +1,5 @@
 namespace OpSpark
 {
-  using System.Collections;
-  using System.Collections.Generic;
   using UnityEngine;
 
   public class Jumping : ACharacterState
@@ -14,7 +12,8 @@ namespace OpSpark
     public Jumping(ICharacter character)
         : base(character) { }
 
-    public override void Idle() {}
+    public override void Idle() { }
+    public override void Fire() { }
 
     public override void Enter()
     {
@@ -27,19 +26,10 @@ namespace OpSpark
     public override void Exit()
     {
         base.Exit();
+        character.Animator.ResetTrigger(Strings.JUMP);
     }
 
     public override void Climb() { /* do nothing */ }
-
-    public override void OnAnimationEnd(string name)
-    {
-      base.OnAnimationEnd(name);
-      if (name.Equals(Strings.JUMP))
-      {
-        // transition away to Running state
-        Run();
-      }
-    }
 
     public override void Update()
     {
@@ -56,13 +46,13 @@ namespace OpSpark
       {
           // we're falling //
           character.Rigidbody2D.velocity -= defaultGravity * character.RateOfJumpingAcceleration * Time.deltaTime;
-          if (character.IsJumpPressed && jumpCount < 2 && jumpEndedCount > 0)
-          {
-              // double jump
-              // TODO: doesn't work
-              PerformJump();
-              jumpCount++;
-          }
+          // if (character.IsJumpPressed && jumpCount < 2 && jumpEndedCount > 0)
+          // {
+          //     // double jump
+          //     // TODO: doesn't work
+          //     PerformJump();
+          //     jumpCount++;
+          // }
       }
 
 
