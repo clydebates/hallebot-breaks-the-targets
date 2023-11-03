@@ -18,6 +18,21 @@ namespace OpSpark
       base.Exit();
     }
 
+    public override void OnAnimationEnd(string name)
+    {
+      base.OnAnimationEnd(name);
+      if (Strings.FIRE.Equals(name))
+      {
+        if (character.InputMovement.x != 0)
+        {
+          Run();
+        } else
+        {
+          Idle();
+        }
+      }
+    }
+
     public override void Fire() {
       base.Fire();
 

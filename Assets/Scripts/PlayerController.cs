@@ -10,42 +10,27 @@ public class PlayerController : MonoBehaviour, ICharacter
   [Header("Required Game Objects")]
   [SerializeField] GameObject fireSpawnPoint;
   [SerializeField] GameObject prefabFireball; 
+
+  [Header("Movement Params")]
   [SerializeField] [Range(1, 10)] float rateOfAcceleration;
+
+  [Header("Jump Params")]
+  [SerializeField] float jumpForce = 15;
+  [SerializeField] float maxJumpDuration = 0.8f;
+  [SerializeField] [Range(1, 10)] float rateOfJumpingAcceleration = 5f;
+  [SerializeField] [Range(1, 10)] float antiGravity = 7;
+  [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
+
   float directionX = 1f;
   Vector2 inputMovement;
   ICharacterState state;
-  bool isInputPressed = false;
+  bool isMovePressed = false;
+  bool isJumpPressed = false;
+  bool isFirePressed = false;
   InputAction.CallbackContext inputAction;
 
 
   // [Header("Jumping Params")]
-
-  // allowable state transitions
-  readonly Dictionary<string, string[]> _allowedTransitions =
-  new()
-  {
-      { 
-        Strings.STATE_IDLING, 
-        new string[] { Strings.STATE_RUNNING, Strings.STATE_JUMPING, Strings.STATE_CLIMBING, Strings.STATE_FIRING } 
-      },
-      {
-        Strings.STATE_RUNNING,
-        new string[] { Strings.STATE_IDLING, Strings.STATE_JUMPING, Strings.STATE_CLIMBING, Strings.STATE_FIRING }
-      },
-      {
-        Strings.STATE_JUMPING,
-        new string[] { Strings.STATE_IDLING, Strings.STATE_CLIMBING, Strings.STATE_FIRING }
-      },
-      { 
-        Strings.STATE_FIRING, 
-        new string[] { Strings.STATE_IDLING, Strings.STATE_RUNNING } 
-      },
-      { 
-        Strings.STATE_CLIMBING, 
-        new string[] { Strings.STATE_JUMPING, Strings.STATE_FIRING } 
-      },
-  };
-
 
   // COMPONENTS
   Rigidbody2D rb;
@@ -58,11 +43,20 @@ public class PlayerController : MonoBehaviour, ICharacter
   public Rigidbody2D Rigidbody2D => rb;
   public BoxCollider2D Feet => feet;
   public Vector2 InputMovement => inputMovement;
-  public float DirectionX => directionX;
-  public bool IsInputPressed => isInputPressed;
   public InputAction.CallbackContext InputAction => inputAction;
   public GameObject FireSpawnPoint => fireSpawnPoint;
   public GameObject PrefabFireball => prefabFireball;
+  public float DirectionX => directionX;
+    //Jumping params
+  public float JumpForce => jumpForce;
+  public float MaxJumpDuration => maxJumpDuration;
+  public float RateOfJumpingAcceleration => rateOfJumpingAcceleration;
+  public float AntiGravity => antiGravity;
+  public float SnapBackRate => snapBackRate;
+  // Input Params
+  public bool IsFirePressed => isFirePressed;
+  public bool IsMovePressed => isMovePressed;
+  public bool IsJumpPressed => isJumpPressed;
 
   void Awake()
     {
@@ -92,30 +86,50 @@ public class PlayerController : MonoBehaviour, ICharacter
 
         if (inputMovement.x != 0)
         {
-            isInputPressed = context.started || context.performed;
+          isMovePressed = context.started || context.performed;
+          Run();
         }
 
         if (context.canceled)
         {
-            // movement should end //
-            isInputPressed = false;
+          // movement should end //
+          isMovePressed = false;
         }
-        Run();
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
       inputAction = context;
-      isInputPressed = context.started || context.performed;
-      isInputPressed = !context.canceled;
-      Jump();
+      if (context.started)
+      {
+        isJumpPressed = true;
+        Jump();
+      }
+      else if (context.performed)
+      {
+        isJumpPressed = true;
+      }
+      else if (context.canceled)
+      {
+        isJumpPressed = false;
+      }
     }
 
     public void OnFire(InputAction.CallbackContext context) { 
       inputAction = context;
-      isInputPressed = context.started || context.performed;
-      isInputPressed = !context.canceled;
-      Fire();
+      if (context.started)
+      {
+        isFirePressed = true;
+        Fire();
+      }
+      else if (context.performed)
+      {
+        isFirePressed = true;
+      }
+      else if (context.canceled)
+      {
+        isFirePressed = false;
+      }
     }
 
     //fired from the Animator   
@@ -135,14 +149,16 @@ public class PlayerController : MonoBehaviour, ICharacter
       Destroy(projectile, 2f);
     }
 
+    public void OnAnimationEnd(string name)
+    {
+      state.OnAnimationEnd(name);
+    }
+
     public void SetState(ICharacterState state)
     {
-      if (_allowedTransitions[this.state.Name].Contains(state.Name))
-      {
         this.state.Exit();
         this.state = state;
         this.state.Enter();
-      }
     }
 
     // delegate to current state

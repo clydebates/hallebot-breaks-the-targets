@@ -11,9 +11,11 @@ namespace OpSpark
         // ANIMATION BOOLS //
         public const string IS_RUNNING = "isRunning";
         public const string IS_JUMPING = "isJumping";
+        public const string IS_IDLING = "isIdling";
 
         // ANIMATION TRIGGERS //
         public const string FIRE = "fire";
+        public const string JUMP = "jump";
 
         // STATE NAMES //
         public const string STATE_IDLE = "Idle";

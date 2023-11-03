@@ -19,17 +19,17 @@ namespace OpSpark
             character.Animator.SetBool(Strings.IS_RUNNING, true);
         }
 
-        // public override void Exit()
-        // {
-        //   base.Exit();
-        //   // character.Animator.SetBool(Strings.IS_RUNNING, false);
-        // }
+        public override void Exit()
+        {
+          base.Exit();
+          character.Animator.SetBool(Strings.IS_RUNNING, false);
+        }
 
         public override void Update()
         {
             base.Update();
 
-            if (character.IsInputPressed)
+            if (character.IsMovePressed)
             {
               // running
               float directionX = character.DirectionX;

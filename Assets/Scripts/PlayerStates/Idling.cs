@@ -13,12 +13,13 @@ namespace OpSpark
         {
             base.Enter();
             character.Transform.localScale = new Vector2(1f, 1f);
-            character.Animator.SetBool(Strings.IS_RUNNING, false);
+            character.Animator.SetBool(Strings.IS_IDLING, true);
         }
 
         public override void Exit()
         {
             base.Exit();
+            character.Animator.SetBool(Strings.IS_IDLING, false);
         }
     }
 }

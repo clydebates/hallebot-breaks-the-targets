@@ -6,37 +6,46 @@ namespace OpSpark
 
   public class Jumping : ACharacterState
   {
-    float jumpForce = 15;
-    float maxJumpDuration = 0.8f;
-    [Range(1, 10)] float antiGravity = 7;
-    [Range(1, 10)] float rateOfAcceleration = 5;
-    [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
-    Vector2 defaultGravity = new Vector2(0f, -Physics2D.gravity.y);
     int jumpCount = 0;
     int jumpEndedCount = 0;
     float duration = 0;
+    Vector2 defaultGravity;
     
     public Jumping(ICharacter character)
         : base(character) { }
 
+    public override void Idle() {}
+
     public override void Enter()
     {
-        base.Enter();
-        character.Transform.localScale = new Vector2(character.DirectionX, 1f);
-        
+      base.Enter();
+      character.Transform.localScale = new Vector2(character.DirectionX, 1f);
+      defaultGravity = new Vector2(0f, -Physics2D.gravity.y);
+      character.Animator.SetTrigger(Strings.JUMP);
     }
 
     public override void Exit()
     {
         base.Exit();
-        character.Animator.SetBool(Strings.IS_RUNNING, true);
+    }
+
+    public override void Climb() { /* do nothing */ }
+
+    public override void OnAnimationEnd(string name)
+    {
+      base.OnAnimationEnd(name);
+      if (name.Equals(Strings.JUMP))
+      {
+        // transition away to Running state
+        Run();
+      }
     }
 
     public override void Update()
     {
       base.Update();
       // TODO: update y velocity on what conditions? //
-      if(IsTouchingPlatform() && character.IsInputPressed)
+      if(IsTouchingPlatform() && character.IsJumpPressed)
       {
           PerformJump();
           jumpCount++;
@@ -46,8 +55,8 @@ namespace OpSpark
       if(character.Rigidbody2D.velocity.y < 0)
       {
           // we're falling //
-          character.Rigidbody2D.velocity -= defaultGravity * rateOfAcceleration * Time.deltaTime;
-          if (character.IsInputPressed && jumpCount < 2 && jumpEndedCount > 0)
+          character.Rigidbody2D.velocity -= defaultGravity * character.RateOfJumpingAcceleration * Time.deltaTime;
+          if (character.IsJumpPressed && jumpCount < 2 && jumpEndedCount > 0)
           {
               // double jump
               // TODO: doesn't work
@@ -58,54 +67,42 @@ namespace OpSpark
 
 
       // TODO: jump higher while key pressed //
-      if(character.IsInputPressed && character.Rigidbody2D.velocity.y > 0)
+      if(character.IsJumpPressed && character.Rigidbody2D.velocity.y > 0)
       {
           duration += Time.deltaTime;
-          // if (duration > maxJumpDuration) character.IsInputPressed = false;
+          // if (duration > maxJumpDuration) character.IsJumpPressed = false;
 
-          float pointInJumpDuration = duration / maxJumpDuration;
-          float appliedAntiGravity = antiGravity;
+          float pointInJumpDuration = duration / character.MaxJumpDuration;
+          float appliedAntiGravity = character.AntiGravity;
 
           // if we're more than halfway through the allowable jump duration //
           if(pointInJumpDuration > 0.5f)
           {
-              appliedAntiGravity = antiGravity * (1 - pointInJumpDuration);
+              appliedAntiGravity = character.AntiGravity * (1 - pointInJumpDuration);
           }
 
           character.Rigidbody2D.velocity += defaultGravity * appliedAntiGravity * Time.deltaTime;
       }
 
       // player releases button //
-      if(!character.IsInputPressed)
+      if(!character.IsJumpPressed)
       {
-          duration = 0;
-          character.Animator.SetBool(Strings.IS_JUMPING, false);
-          // but we're still falling, so snap back to earth a bit //
-          if (character.Rigidbody2D.velocity.y > 0)
-          {
-              character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, character.Rigidbody2D.velocity.y * snapBackRate);
-          }
-          Idle();
+        duration = 0;
+        // character.Animator.SetBool(Strings.IS_JUMPING, false);
+        // but we're still falling, so snap back to earth a bit //
+        if (character.Rigidbody2D.velocity.y > 0)
+        {
+          character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, character.Rigidbody2D.velocity.y * character.SnapBackRate);
+        }
+        Run();
       }
     }
 
     private void PerformJump() 
     {
-        duration = 0;
-        character.Animator.SetBool(Strings.IS_JUMPING, true);
-        float toY = jumpForce;
-        character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, toY);
-    }
-
-    private bool IsTouchingPlatform()
-    {
-        if (character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM))) 
-        {
-            jumpEndedCount = 0;
-            jumpCount = 0;
-            return true;
-        }
-        return false;
+      duration = 0;
+      float toY = character.JumpForce;
+      character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, toY);
     }
   }
 }

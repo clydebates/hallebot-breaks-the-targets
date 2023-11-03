@@ -15,6 +15,13 @@ namespace OpSpark
         GameObject FireSpawnPoint { get; } 
         GameObject PrefabFireball { get; }
         float DirectionX { get; }
-        bool IsInputPressed { get; }
+        bool IsMovePressed { get; }
+        bool IsJumpPressed { get; }
+        bool IsFirePressed { get; }
+        float JumpForce { get; }
+        float MaxJumpDuration { get; }
+        float RateOfJumpingAcceleration { get; }
+        float AntiGravity { get; }
+        float SnapBackRate { get; }
     }
 }
