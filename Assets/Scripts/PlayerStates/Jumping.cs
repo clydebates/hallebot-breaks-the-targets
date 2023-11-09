@@ -4,8 +4,8 @@ namespace OpSpark
 
   public class Jumping : ACharacterState
   {
-    int jumpCount = 0;
-    int jumpEndedCount = 0;
+    // int jumpCount = 0;
+    // int jumpEndedCount = 0;
     float duration = 0;
     Vector2 defaultGravity;
     
@@ -38,7 +38,7 @@ namespace OpSpark
       if(IsTouchingPlatform() && character.IsJumpPressed)
       {
           PerformJump();
-          jumpCount++;
+          // jumpCount++;
       }
 
       // TODO: update rate of return to platform //

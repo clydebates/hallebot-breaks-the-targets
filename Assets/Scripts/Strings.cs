@@ -16,6 +16,8 @@ namespace OpSpark
         // ANIMATION TRIGGERS //
         public const string FIRE = "fire";
         public const string JUMP = "jump";
+        public const string EXPLODE = "explode";
+
 
         // STATE NAMES //
         public const string STATE_IDLE = "Idle";
