@@ -82,10 +82,10 @@ public class PlayerController : MonoBehaviour, ICharacter
         */
         inputAction = context;
         inputMovement = context.ReadValue<Vector2>();
-        directionX = inputMovement.x > 0 ? 1 : -1;
 
         if (inputMovement.x != 0)
         {
+          directionX = inputMovement.x > 0 ? 1 : -1;
           if(context.started)
           {
             isMovePressed = true;

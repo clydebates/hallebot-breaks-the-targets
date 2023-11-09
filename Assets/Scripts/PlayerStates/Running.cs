@@ -7,7 +7,7 @@ namespace OpSpark
   public class Running : ACharacterState
   {
     float acceleration;
-    float rateOfMovement = 10f;
+    float rateOfMovement = 8f;
     float rateOfAcceleration = 10f;
 
     public Running(ICharacter character)
@@ -33,6 +33,10 @@ namespace OpSpark
       // running
       float directionX = character.DirectionX;
       character.Transform.localScale = new Vector2(directionX, 1f);
+      if (directionX < 0)
+      {
+        Debug.Log(directionX);
+      }
 
       UpdateAcceleration();
       float toX = rateOfMovement * acceleration * directionX;
@@ -49,8 +53,10 @@ namespace OpSpark
         else if (acceleration != 0)
         {
             acceleration -= Time.deltaTime * rateOfAcceleration;
-            if (acceleration < 0)
-                acceleration = 0;
+          if (acceleration < 0)
+          {
+            acceleration = 0;
+          }
         }
     }
   }

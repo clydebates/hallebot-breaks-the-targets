@@ -23,12 +23,12 @@ namespace OpSpark
     // Methods
     public virtual void Enter()
     {
-        Debug.Log($"Entering state {_name}");
+        // Debug.Log($"Entering state {_name}");
     }
 
     public virtual void Exit()
     {
-        Debug.Log($"Exiting state {_name}");
+        // Debug.Log($"Exiting state {_name}");
     }
 
     public virtual void Climb()
@@ -89,7 +89,7 @@ namespace OpSpark
     // TODO: not needed?
     public virtual void OnAnimationEnd(string name)
     {
-      Debug.Log($"Animation {name} ended");
+      // Debug.Log($"Animation {name} ended");
     }
 
     protected bool IsTouchingPlatform() 
