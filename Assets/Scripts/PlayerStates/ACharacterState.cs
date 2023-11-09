@@ -23,12 +23,12 @@ namespace OpSpark
     // Methods
     public virtual void Enter()
     {
-        // Debug.Log($"Entering state {_name}");
+        Debug.Log($"Entering state {_name}");
     }
 
     public virtual void Exit()
     {
-        // Debug.Log($"Exiting state {_name}");
+        Debug.Log($"Exiting state {_name}");
     }
 
     public virtual void Climb()
@@ -60,13 +60,13 @@ namespace OpSpark
     {
       // TODO: all state switching should happen here
       // switch states depending on the input action
-      if (character.IsMovePressed && character.IsJumpPressed)
-      {
-        Jump();
-      }
-      else if (character.IsMovePressed && character.IsFirePressed)
+      if (character.IsFirePressed)
       {
         Fire();
+      }
+      else if (character.IsMovePressed && character.IsJumpPressed)
+      {
+        Jump();
       }
       else if (character.IsMovePressed)
       {
@@ -75,10 +75,6 @@ namespace OpSpark
       else if (character.IsJumpPressed)
       {
         Jump();
-      }
-      else if (character.IsFirePressed)
-      {
-        Fire();
       }
       else
       {

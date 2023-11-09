@@ -13,7 +13,6 @@ namespace OpSpark
         : base(character) { }
 
     public override void Idle() { }
-    public override void Fire() { }
 
     public override void Enter()
     {
