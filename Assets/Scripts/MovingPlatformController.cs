@@ -16,14 +16,8 @@ public class MovingPlatformController : MonoBehaviour
   // Update is called once per frame
   void Update()
   {
-    if (Vector3.Distance(transform.position, pos1.transform.position) < .1f)
-    {
-      targetPos = pos2.transform.position;
-    }
-    else
-    {
-      targetPos = pos1.transform.position;
-    }
+    if (Vector3.Distance(transform.position, pos1.transform.position) < .1f) targetPos = pos2.transform.position;
+    if (Vector3.Distance(transform.position, pos2.transform.position) < .1f) targetPos = pos1.transform.position;
 
     transform.position = Vector3.MoveTowards(transform.position, targetPos, Speed * Time.deltaTime);
 
