@@ -16,10 +16,13 @@ public class PlayerController : MonoBehaviour, ICharacter
 
   [Header("Jump Params")]
   [SerializeField] float jumpForce = 15;
-  [SerializeField] float maxJumpDuration = 0.8f;
+  [SerializeField] float maxJumpDuration;
   [SerializeField] [Range(1, 10)] float rateOfJumpingAcceleration = 5f;
   [SerializeField] [Range(1, 10)] float antiGravity = 7;
   [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
+
+  [Header("Wall Slide Params")]
+  [SerializeField] [Range(-2f, -0.1f)] float slideSpeed;
 
   float directionX = 1f;
   Vector2 inputMovement;
@@ -28,7 +31,6 @@ public class PlayerController : MonoBehaviour, ICharacter
   bool isJumpPressed = false;
   bool isFirePressed = false;
   InputAction.CallbackContext inputAction;
-
 
   // [Header("Jumping Params")]
 
@@ -47,122 +49,125 @@ public class PlayerController : MonoBehaviour, ICharacter
   public GameObject FireSpawnPoint => fireSpawnPoint;
   public GameObject PrefabFireball => prefabFireball;
   public float DirectionX => directionX;
-    //Jumping params
+  //Jumping params
   public float JumpForce => jumpForce;
   public float MaxJumpDuration => maxJumpDuration;
   public float RateOfJumpingAcceleration => rateOfJumpingAcceleration;
   public float AntiGravity => antiGravity;
   public float SnapBackRate => snapBackRate;
+  // Sliding params
+  public float SlideSpeed => slideSpeed;
   // Input Params
   public bool IsFirePressed => isFirePressed;
   public bool IsMovePressed => isMovePressed;
   public bool IsJumpPressed => isJumpPressed;
 
   void Awake()
-    {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-        feet = GetComponent<BoxCollider2D>();
-    }
+  {
+    rb = GetComponent<Rigidbody2D>();
+    animator = GetComponent<Animator>();
+    feet = GetComponent<BoxCollider2D>();
+  }
 
-    void Start()
-    {
-        state = new Idling(this);
-    }
+  void Start()
+  {
+      state = new Idling(this);
+  }
 
-    void Update()
-    {
-        state.Update();
-    }
+  void Update()
+  {
+      state.Update();
+  }
 
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        /*
-        * The Move action produces a Vector2 (x, y), registering x and y axis input.
-        */
-        inputAction = context;
-        inputMovement = context.ReadValue<Vector2>();
-
-        if (inputMovement.x != 0)
-        {
-          directionX = inputMovement.x > 0 ? 1 : -1;
-          if(context.started)
-          {
-            isMovePressed = true;
-          }
-          else if (context.performed)
-          {
-            isMovePressed = true;
-          }
-        }
-
-        if (context.canceled)
-        {
-          // movement should end //
-          isMovePressed = false;
-        }
-    }
-
-    public void OnJump(InputAction.CallbackContext context)
-    {
+  public void OnMove(InputAction.CallbackContext context)
+  {
+      /*
+      * The Move action produces a Vector2 (x, y), registering x and y axis input.
+      */
       inputAction = context;
-      if (context.started)
-      {
-        isJumpPressed = true;
-      }
-      else if (context.performed)
-      {
-        isJumpPressed = true;
-      }
-      else if (context.canceled)
-      {
-        isJumpPressed = false;
-      }
-    }
+      inputMovement = context.ReadValue<Vector2>();
 
-    public void OnFire(InputAction.CallbackContext context) { 
-      inputAction = context;
-      if (context.started)
+      if (inputMovement.x != 0)
       {
-        isFirePressed = true;
+        directionX = inputMovement.x > 0 ? 1 : -1;
+        if(context.started)
+        {
+          isMovePressed = true;
+        }
+        else if (context.performed)
+        {
+          isMovePressed = true;
+        }
       }
-      else if (context.performed)
-      {
-        isFirePressed = true;
-      }
-      else if (context.canceled)
-      {
-        isFirePressed = false;
-      }
-    }
 
-    //fired from the Animator   
-    public void OnFireAway()
+      if (context.canceled)
+      {
+        // movement should end //
+        isMovePressed = false;
+      }
+  }
+
+  public void OnJump(InputAction.CallbackContext context)
+  {
+    inputAction = context;
+    if (context.started)
     {
-      // instantiate prefab
-      GameObject projectile = Instantiate(
-          prefabFireball, 
-          fireSpawnPoint.transform.position, 
-          Quaternion.identity);
-
-      Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-      // TODO: make projectile velocity a SerializeField
-      rb.velocity = fireSpawnPoint.transform.right * 20f * transform.localScale.x;
-      // destroy object after certain amount of time
-      // Destroy(projectile, lifespan);
-      Destroy(projectile, 2f);
+      isJumpPressed = true;
     }
-
-    // TODO: Not needed?
-    public void OnAnimationEnd(string name)
+    else if (context.performed)
     {
-      // state.OnAnimationEnd(name);
+      isJumpPressed = true;
     }
-
-    public void SetState(ICharacterState state)
+    else if (context.canceled)
     {
-        this.state.Exit();
-        this.state = state;
-        this.state.Enter();
+      isJumpPressed = false;
     }
+  }
+
+  public void OnFire(InputAction.CallbackContext context) { 
+    inputAction = context;
+    if (context.started)
+    {
+      isFirePressed = true;
+    }
+    else if (context.performed)
+    {
+      isFirePressed = true;
+    }
+    else if (context.canceled)
+    {
+      isFirePressed = false;
+    }
+  }
+
+  //fired from the Animator
+  // OR from Sliding state
+  public void OnFireAway()
+  {
+    // instantiate prefab
+    GameObject projectile = Instantiate(
+        prefabFireball, 
+        fireSpawnPoint.transform.position, 
+        Quaternion.identity);
+
+    Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
+    // TODO: make projectile velocity a SerializeField
+    rb.velocity = fireSpawnPoint.transform.right * 20f * transform.localScale.x;
+    // destroy object after certain amount of time
+    // Destroy(projectile, lifespan);
+    Destroy(projectile, 2f);
+  }
+
+  // TODO: Not needed?
+  public void OnAnimationEnd(string name)
+  {
+    // state.OnAnimationEnd(name);
+  }
+
+  public void SetState(ICharacterState state)
+  {
+      this.state.Exit();
+      this.state = state;
+      this.state.Enter();
+  }
 }

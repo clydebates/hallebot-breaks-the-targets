@@ -6,6 +6,7 @@ namespace OpSpark
     public interface ICharacter
     {
         void SetState(ICharacterState state);
+        void OnFireAway();
         Transform Transform { get; }
         Animator Animator { get; }
         Rigidbody2D Rigidbody2D { get; }
@@ -23,5 +24,6 @@ namespace OpSpark
         float RateOfJumpingAcceleration { get; }
         float AntiGravity { get; }
         float SnapBackRate { get; }
+        float SlideSpeed { get; }
     }
 }

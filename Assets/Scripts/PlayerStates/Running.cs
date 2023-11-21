@@ -33,10 +33,6 @@ namespace OpSpark
       // running
       float directionX = character.DirectionX;
       character.Transform.localScale = new Vector2(directionX, 1f);
-      if (directionX < 0)
-      {
-        Debug.Log(directionX);
-      }
 
       UpdateAcceleration();
       float toX = rateOfMovement * acceleration * directionX;

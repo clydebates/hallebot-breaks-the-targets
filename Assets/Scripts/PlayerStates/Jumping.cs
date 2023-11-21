@@ -8,6 +8,7 @@ namespace OpSpark
     // int jumpEndedCount = 0;
     float duration = 0;
     Vector2 defaultGravity;
+    bool isJumping;
     
     public Jumping(ICharacter character)
         : base(character) { }
@@ -17,6 +18,7 @@ namespace OpSpark
     public override void Enter()
     {
       base.Enter();
+      isJumping = character.IsJumpPressed;
       character.Transform.localScale = new Vector2(character.DirectionX, 1f);
       defaultGravity = new Vector2(0f, -Physics2D.gravity.y);
       character.Animator.SetTrigger(Strings.JUMP);
@@ -26,6 +28,7 @@ namespace OpSpark
     {
         base.Exit();
         character.Animator.ResetTrigger(Strings.JUMP);
+        // FxManager.Instance.KickupDust();
     }
 
     public override void Climb() { /* do nothing */ }
@@ -34,7 +37,7 @@ namespace OpSpark
     {
       base.Update();
       // TODO: update y velocity on what conditions? //
-      if(IsTouchingPlatform() && character.IsJumpPressed)
+      if(IsTouchingPlatform() && isJumping)
       {
           PerformJump();
           // jumpCount++;
@@ -56,10 +59,10 @@ namespace OpSpark
 
 
       // TODO: jump higher while key pressed //
-      if(character.IsJumpPressed && character.Rigidbody2D.velocity.y > 0)
+      if(isJumping && character.Rigidbody2D.velocity.y > 0)
       {
           duration += Time.deltaTime;
-          // if (duration > maxJumpDuration) character.IsJumpPressed = false;
+          if (duration > character.MaxJumpDuration) isJumping = false;
 
           float pointInJumpDuration = duration / character.MaxJumpDuration;
           float appliedAntiGravity = character.AntiGravity;
@@ -74,8 +77,9 @@ namespace OpSpark
       }
 
       // player releases button //
-      if(!character.IsJumpPressed)
+      if(!isJumping)
       {
+        Debug.Log("done jumping");
         duration = 0;
         // character.Animator.SetBool(Strings.IS_JUMPING, false);
         // but we're still falling, so snap back to earth a bit //
@@ -83,7 +87,7 @@ namespace OpSpark
         {
           character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, character.Rigidbody2D.velocity.y * character.SnapBackRate);
         }
-        Run();
+        // Run();
       }
     }
 

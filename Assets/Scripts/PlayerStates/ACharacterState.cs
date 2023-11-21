@@ -56,6 +56,11 @@ namespace OpSpark
       character.SetState(new Running(character));
     }
 
+    public virtual void Slide()
+    {
+      character.SetState(new Sliding(character));
+    }
+
     public virtual void Update()
     {
       // TODO: all state switching should happen here
@@ -67,6 +72,10 @@ namespace OpSpark
       else if (character.IsMovePressed && character.IsJumpPressed)
       {
         Jump();
+      }
+      else if (IsTouchingWall() != 0)
+      {
+        Slide();
       }
       else if (character.IsMovePressed)
       {
@@ -93,5 +102,33 @@ namespace OpSpark
       return character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM));
     }
 
+    /*
+    * Returns:
+    * if not touching a wall: 0
+    * if touching wall to left side of character: -1
+    * if touching wall to right side of character: 1
+    */
+    protected int IsTouchingWall() 
+    {
+      if (!IsTouchingPlatform())
+      {
+        float lengthOfCast = 0.6f;
+        Vector2 characterPos = character.Transform.position;
+        int wallLayerMask = LayerMask.GetMask(Strings.WALL);
+
+        RaycastHit2D leftRayHit = Physics2D.Raycast(characterPos, Vector2.left, lengthOfCast, wallLayerMask);
+        if(leftRayHit.collider != null)
+        {
+          return -1;
+        }
+
+        RaycastHit2D rightRayHit = Physics2D.Raycast(characterPos, Vector2.right, lengthOfCast, wallLayerMask);
+        if (rightRayHit.collider != null)
+        {
+          return 1;
+        }
+      }
+      return 0;
+    }
   }
 }
