@@ -13,7 +13,7 @@ namespace OpSpark
     public Jumping(ICharacter character)
         : base(character) { }
 
-    public override void Idle() { }
+    public override void Jump() { }
 
     public override void Enter()
     {
@@ -27,8 +27,7 @@ namespace OpSpark
     public override void Exit()
     {
         base.Exit();
-        character.Animator.ResetTrigger(Strings.JUMP);
-        // FxManager.Instance.KickupDust();
+        // character.Animator.ResetTrigger(Strings.JUMP);
     }
 
     public override void Climb() { /* do nothing */ }

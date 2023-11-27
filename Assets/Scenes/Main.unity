@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84395206}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pos1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 225282400}
   - component: {fileID: 225282399}
   - component: {fileID: 225282398}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: RivetPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -522,6 +522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.35
@@ -682,6 +686,7 @@ Transform:
   - {fileID: 2043276797}
   - {fileID: 156129411}
   - {fileID: 1189899799}
+  - {fileID: 476883491}
   m_Father: {fileID: 142822524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &349723722
@@ -831,7 +836,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 465169761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pos2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -862,7 +867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 476883491}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MovingPlatforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -877,13 +882,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476883490}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.13, y: -14.94, z: 0.17857969}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1372866062}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 321512869}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502753891
 GameObject:
@@ -1295,6 +1300,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: target (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 6505109678233504543, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 17.72
@@ -1468,6 +1477,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.99
@@ -1524,6 +1537,10 @@ PrefabInstance:
     - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_Name
       value: wood-platform1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2065,9 +2082,9 @@ MonoBehaviour:
   rateOfAcceleration: 0
   jumpForce: 15
   maxJumpDuration: 0.3
-  rateOfJumpingAcceleration: 3.09
-  antiGravity: 8.18
-  snapBackRate: 0.3
+  rateOfJumpingAcceleration: 1.53
+  antiGravity: 3.66
+  snapBackRate: 0.394
   slideSpeed: -1.27
 --- !u!1001 &811353179
 PrefabInstance:
@@ -2080,6 +2097,10 @@ PrefabInstance:
     - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_Name
       value: wood-platform1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2137,6 +2158,10 @@ PrefabInstance:
     - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_Name
       value: target (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6505109678233504543, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2473,6 +2498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.12
@@ -2602,6 +2631,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.32
@@ -2659,7 +2692,7 @@ GameObject:
   - component: {fileID: 1168944465}
   m_Layer: 0
   m_Name: Targets
-  m_TagString: Untagged
+  m_TagString: Target
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2711,6 +2744,10 @@ PrefabInstance:
     - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_Name
       value: wood-platform1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2943,6 +2980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.56
@@ -3000,6 +3041,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.659
@@ -3054,7 +3099,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1372866062}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MovingPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3301,6 +3346,10 @@ PrefabInstance:
     - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_Name
       value: target (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6505109678233504543, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3570,6 +3619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.8
@@ -3703,8 +3756,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.0018498898, y: -0.0053999424, z: 0}
-    m_Extent: {x: 4.7765503, y: 4.7769003, z: 0}
+    m_Center: {x: -0.0028998852, y: -0.00819993, z: 0}
+    m_Extent: {x: 4.7804003, y: 4.7785997, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3778,6 +3831,10 @@ PrefabInstance:
     - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_Name
       value: wood-platform1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3927,6 +3984,10 @@ PrefabInstance:
     - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_Name
       value: target
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134243942005351695, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 6505109678233504543, guid: fbdb05c0ed7fc4c428b6fb37218ff1b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4185,6 +4246,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wood-platform1
       objectReference: {fileID: 0}
+    - target: {fileID: 3203672479996444189, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.06
@@ -4243,4 +4308,3 @@ SceneRoots:
   - {fileID: 443553122}
   - {fileID: 659146065}
   - {fileID: 1248462609}
-  - {fileID: 476883491}
