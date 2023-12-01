@@ -14,6 +14,7 @@ namespace OpSpark
     void Fire();
     void Climb();
     void Slide();
+    void SlideJump();
 
     void Update();
     void OnAnimationEnd(string name);

@@ -1,7 +1,5 @@
 namespace OpSpark
 {
-  using System.Collections.Generic;
-  using System.Linq;
   using UnityEngine;
 
   public abstract class ACharacterState : ICharacterState
@@ -61,15 +59,19 @@ namespace OpSpark
       character.SetState(new Sliding(character));
     }
 
+    public virtual void SlideJump()
+    {
+      character.SetState(new SlideJumping(character));
+    }
+
     public virtual void Update()
     {
-      // TODO: all state switching should happen here
       // switch states depending on the input action
       if (character.IsFirePressed)
       {
         Fire();
       }
-      else if (character.IsMovePressed && character.IsJumpPressed)
+      else if (character.IsJumpPressed)
       {
         Jump();
       }
@@ -80,10 +82,6 @@ namespace OpSpark
       else if (character.IsMovePressed)
       {
         Run();
-      }
-      else if (character.IsJumpPressed)
-      {
-        Jump();
       }
       else
       {

@@ -10,8 +10,12 @@ namespace OpSpark
       public Sliding(ICharacter character) : base(character) { }
 
       public override void Slide() {}
+    public override void Jump()
+    {
+      base.SlideJump();
+    }
 
-      public override void Fire()
+    public override void Fire()
       {
       // skip firing state so we don't change animations
       // but still want to actually fire a projectile
