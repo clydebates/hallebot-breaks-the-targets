@@ -2080,7 +2080,7 @@ MonoBehaviour:
   fireSpawnPoint: {fileID: 1400529754}
   prefabFireball: {fileID: 1779337904253830704, guid: eca286e30edf3475da9f68378f1d1879, type: 3}
   rateOfAcceleration: 0
-  jumpForce: 15
+  jumpForce: 17
   maxJumpDuration: 0.3
   rateOfJumpingAcceleration: 1.53
   antiGravity: 3.66
@@ -3734,8 +3734,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.0011000633, y: 0.007799864, z: 0}
-    m_Extent: {x: 4.777, y: 4.7785997, z: 0}
+    m_Center: {x: -0.00364995, y: 0.0037999153, z: 0}
+    m_Extent: {x: 4.7844496, y: 4.7806, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

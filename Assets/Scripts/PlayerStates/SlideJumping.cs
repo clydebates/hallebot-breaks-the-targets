@@ -8,9 +8,7 @@ namespace OpSpark
     // Update is called once per frame
     public override void Update()
     {
-      float toY = character.JumpForce;
-      float toX = (character.Rigidbody2D.velocity.x + 0.5f) * character.DirectionX;
-      character.Rigidbody2D.velocity = new Vector2(toX, toY);
+      character.Rigidbody2D.AddForce(new Vector2(8f * character.DirectionX, -8f));
     }
   }
 }

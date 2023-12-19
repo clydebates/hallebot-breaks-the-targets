@@ -3,17 +3,13 @@ namespace OpSpark
   using UnityEngine;
 
   public class Sliding : ACharacterState
-    {
-      readonly float firingSpeed = 0.5f;
-      float canFire = 0;
+  {
+    readonly float firingSpeed = 0.5f;
+    float canFire = 0;
 
-      public Sliding(ICharacter character) : base(character) { }
+    public Sliding(ICharacter character) : base(character) { }
 
-      public override void Slide() {}
-    public override void Jump()
-    {
-      base.SlideJump();
-    }
+    public override void Slide() {}
 
     public override void Fire()
       {
