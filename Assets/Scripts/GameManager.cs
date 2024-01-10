@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+  // TODO: Character select
+  // Enable chosen character Game Object on/before main scene load
+  // Set correct transform to the Follow property on the FollowCamera
     public static GameManager Instance;
     public static event Action OnPlayerDeath;
 

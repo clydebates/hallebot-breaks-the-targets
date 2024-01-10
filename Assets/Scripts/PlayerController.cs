@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using OpSpark;
-using System.Linq;
 
 public class PlayerController : MonoBehaviour, ICharacter
 {
@@ -20,9 +17,11 @@ public class PlayerController : MonoBehaviour, ICharacter
   [SerializeField] [Range(1, 10)] float rateOfJumpingAcceleration = 5f;
   [SerializeField] [Range(1, 10)] float antiGravity = 7;
   [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
+  [SerializeField] bool canJump = true;
+  [SerializeField] bool canFly = false;
 
   [Header("Wall Slide Params")]
-  [SerializeField] [Range(-2f, -0.1f)] float slideSpeed;
+  [SerializeField] [Range(0.1f, 3f)] float slideSpeed;
 
   float directionX = 1f;
   Vector2 inputMovement;
@@ -55,18 +54,21 @@ public class PlayerController : MonoBehaviour, ICharacter
   public float RateOfJumpingAcceleration => rateOfJumpingAcceleration;
   public float AntiGravity => antiGravity;
   public float SnapBackRate => snapBackRate;
-  // Sliding params
-  public float SlideSpeed => slideSpeed;
+  public bool CanJump => canJump;
+  public bool CanFly => canFly;
   // Input Params
   public bool IsFirePressed => isFirePressed;
   public bool IsMovePressed => isMovePressed;
   public bool IsJumpPressed => isJumpPressed;
+  // Wall Sliding/Jump 
+  public float SlideSpeed => slideSpeed;
 
   void Awake()
   {
     rb = GetComponent<Rigidbody2D>();
     animator = GetComponent<Animator>();
     feet = GetComponent<BoxCollider2D>();
+    // TODO: grab user's character selection from gamemanager
   }
 
   void Start()

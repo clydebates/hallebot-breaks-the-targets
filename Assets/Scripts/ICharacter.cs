@@ -25,5 +25,7 @@ namespace OpSpark
         float AntiGravity { get; }
         float SnapBackRate { get; }
         float SlideSpeed { get; }
+        bool CanJump { get; }
+        bool CanFly { get; }
     }
 }

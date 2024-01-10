@@ -14,6 +14,7 @@ namespace OpSpark
         public const string IS_JUMPING = "isJumping";
         public const string IS_IDLING = "isIdling";
         public const string IS_SLIDING = "isSliding";
+        public const string IS_FLYING = "isFlying";
 
         // ANIMATION TRIGGERS //
         public const string FIRE = "fire";

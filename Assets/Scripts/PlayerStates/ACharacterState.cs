@@ -64,6 +64,11 @@ namespace OpSpark
       character.SetState(new SlideJumping(character));
     }
 
+    public virtual void Fly()
+    {
+      character.SetState(new Flying(character));
+    }
+
     public virtual void Update()
     {
       // switch states depending on the input action
@@ -71,11 +76,15 @@ namespace OpSpark
       {
         Fire();
       }
-      else if (character.IsJumpPressed)
+      else if (character.IsJumpPressed && character.CanJump)
       {
         Jump();
       }
-      else if (IsTouchingWall() != 0)
+      else if (character.IsJumpPressed && character.CanFly)
+      {
+        Fly();
+      }
+      else if (IsTouchingWall())
       {
         Slide();
       }
@@ -100,33 +109,18 @@ namespace OpSpark
       return character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM));
     }
 
-    /*
-    * Returns:
-    * if not touching a wall: 0
-    * if touching wall to left side of character: -1
-    * if touching wall to right side of character: 1
-    */
-    protected int IsTouchingWall() 
+    protected bool IsTouchingWall() 
     {
       if (!IsTouchingPlatform())
       {
-        float lengthOfCast = 0.6f;
-        Vector2 characterPos = character.Transform.position;
-        int wallLayerMask = LayerMask.GetMask(Strings.WALL);
-
-        RaycastHit2D leftRayHit = Physics2D.Raycast(characterPos, Vector2.left, lengthOfCast, wallLayerMask);
-        if(leftRayHit.collider != null)
+        // TODO: layerMask filter is not working
+        if (character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.WALL)))
         {
-          return -1;
+          return true;
         }
-
-        RaycastHit2D rightRayHit = Physics2D.Raycast(characterPos, Vector2.right, lengthOfCast, wallLayerMask);
-        if (rightRayHit.collider != null)
-        {
-          return 1;
-        }
+        return false;
       }
-      return 0;
+      return false;
     }
   }
 }
