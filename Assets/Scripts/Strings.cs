@@ -34,5 +34,10 @@ namespace OpSpark
         public const string STATE_JUMPING = "Jumping";
         public const string STATE_CLIMBING = "Climbing";
         public const string STATE_RUNNING = "Running";
+
+        // SCENES //
+        public const string LOBBY = "Lobby";
+        public const string GAME = "Game";
+        public const string GAME_OVER = "GameOver";
     }
 }
