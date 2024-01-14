@@ -249,6 +249,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720742e87d297489280d659bd7507cc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hallebot: {fileID: 795688348}
+  spaceman: {fileID: 726233953}
+  followCamera: {fileID: 1115449779}
 --- !u!4 &32883770 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4321849582138360939, guid: 98d6bd5cd012948b3a031f3d17ea9228, type: 3}
@@ -2723,8 +2726,6 @@ GameObject:
   - component: {fileID: 795688362}
   - component: {fileID: 795688355}
   - component: {fileID: 795688356}
-  - component: {fileID: 795688358}
-  - component: {fileID: 795688357}
   m_Layer: 6
   m_Name: PlayerHallebot
   m_TagString: Player
@@ -2895,33 +2896,6 @@ MonoBehaviour:
   canJump: 1
   canFly: 0
   slideSpeed: 0.66
---- !u!114 &795688357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795688348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30068e56935bd4f8d98c47dbcc44ab85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animatorController: {fileID: 9100000, guid: 0ac387b662620414bbddb73f49f7fd35, type: 2}
-  boxCollider: {fileID: 0}
---- !u!114 &795688358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 795688348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbe5463e06e148bd92482abd941ebe7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animatorController: {fileID: 9100000, guid: 6f35d5df77faf403ab428e73fe24e34e, type: 2}
 --- !u!61 &795688359
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5038,8 +5012,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.002699852, y: -0.0036001205, z: 0}
-    m_Extent: {x: 4.7781, y: 4.7771, z: 0}
+    m_Center: {x: -0.002699852, y: 0.00274992, z: 0}
+    m_Extent: {x: 4.7781, y: 4.78465, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -3,9 +3,22 @@ using OpSpark;
 
 public class LobbyManager : TransitionManager
 {
+  public static LobbyManager Instance;
+  private int characterSelection = 0;
 
-  public void OnCharacterSelect()
+  public int CharacterSelection { get => characterSelection; }
+
+  void Awake()
   {
+    if (!Instance)
+    {
+      Instance = this;
+    }
+  }
+
+  public void OnCharacterSelect(int character)
+  {
+    characterSelection = character;
     panelFader.FadeOut(Strings.GAME);
   }
 
