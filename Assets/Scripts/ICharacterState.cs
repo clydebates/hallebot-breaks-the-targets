@@ -12,7 +12,6 @@ namespace OpSpark
     void Run();
     void Jump();
     void Fire();
-    void Climb();
     void Slide();
     void SlideJump();
 

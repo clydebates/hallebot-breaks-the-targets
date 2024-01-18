@@ -18,14 +18,7 @@ public class GameManager : MonoBehaviour
   void Awake()
   {
     Instance = this;
-    if (LobbyManager.Instance != null)
-    {
-      SetCharacter(LobbyManager.Instance.CharacterSelection);
-    }
-    else
-    {
-      SetCharacter(0);
-    }
+    SetCharacter(LobbyManager.Instance.CharacterSelection);
   }
 
   public void GameOver()

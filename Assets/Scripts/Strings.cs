@@ -27,12 +27,10 @@ namespace OpSpark
         public const string STATE_IDLE = "Idle";
         public const string STATE_FIRE = "Fire";
         public const string STATE_JUMP = "Jump";
-        public const string STATE_CLIMB = "Climb";
         public const string STATE_RUN = "Run";
         public const string STATE_IDLING = "Idling";
         public const string STATE_FIRING = "Firing";
         public const string STATE_JUMPING = "Jumping";
-        public const string STATE_CLIMBING = "Climbing";
         public const string STATE_RUNNING = "Running";
 
         // SCENES //

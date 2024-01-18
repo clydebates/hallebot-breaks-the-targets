@@ -9,7 +9,15 @@ namespace OpSpark
     public override void Enter()
     {
       base.Enter();
-      character.Animator.SetTrigger(Strings.FIRE);
+      if (characterInt == 0)
+      {
+        character.Animator.SetTrigger(Strings.FIRE);
+      }
+      else if (characterInt == 1)
+      {
+        // spaceman purposefully has no firing animation
+        character.OnFireAway();
+      }
     }
 
     public override void Exit()

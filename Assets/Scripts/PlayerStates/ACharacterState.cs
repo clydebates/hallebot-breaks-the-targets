@@ -7,6 +7,7 @@ namespace OpSpark
     // Class members
     protected ICharacter character;
     readonly string _name;
+    protected int characterInt = LobbyManager.Instance.CharacterSelection;
 
     // getters
     public string Name => _name;
@@ -27,11 +28,6 @@ namespace OpSpark
     public virtual void Exit()
     {
         Debug.Log($"Exiting state {_name}");
-    }
-
-    public virtual void Climb()
-    {
-        throw new System.NotImplementedException();
     }
 
     public virtual void Fire()
@@ -84,7 +80,7 @@ namespace OpSpark
       {
         Fly();
       }
-      else if (IsTouchingWall())
+      else if (character.CanSlide && IsTouchingWall())
       {
         Slide();
       }

@@ -1,6 +1,10 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using OpSpark;
+using UnityEditor.ShaderGraph.Internal;
+using System.Threading.Tasks;
+using Unity.VisualScripting;
+using System.Collections;
 
 public class PlayerController : MonoBehaviour, ICharacter
 {
@@ -8,17 +12,27 @@ public class PlayerController : MonoBehaviour, ICharacter
   [SerializeField] GameObject fireSpawnPoint;
   [SerializeField] GameObject prefabFireball; 
 
+  [Header("Character Abilities")]
+  [SerializeField] bool canJump = true;
+  [SerializeField] bool canSlide = true;
+  [SerializeField] bool canFly = false;
+
   [Header("Movement Params")]
   [SerializeField] [Range(1, 10)] float rateOfAcceleration;
 
-  [Header("Jump Params")]
+  [Header("Jumping Params")]
   [SerializeField] float jumpForce = 15;
   [SerializeField] float maxJumpDuration;
   [SerializeField] [Range(1, 10)] float rateOfJumpingAcceleration = 5f;
   [SerializeField] [Range(1, 10)] float antiGravity = 7;
   [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
-  [SerializeField] bool canJump = true;
-  [SerializeField] bool canFly = false;
+
+  [Header("Flying Params")]
+  [SerializeField] float flyForce;
+  [SerializeField] int maxFlyingTime;
+  [SerializeField] int flyRecoveryTime;
+  private int flyStamina = 0;
+  private bool isFlyingTimerRunning = false;
 
   [Header("Wall Slide Params")]
   [SerializeField] [Range(0.1f, 3f)] float slideSpeed;
@@ -55,7 +69,10 @@ public class PlayerController : MonoBehaviour, ICharacter
   public float AntiGravity => antiGravity;
   public float SnapBackRate => snapBackRate;
   public bool CanJump => canJump;
+  public bool CanSlide => canSlide;
+  //Flying params
   public bool CanFly => canFly;
+  public float FlyForce => flyForce;
   // Input Params
   public bool IsFirePressed => isFirePressed;
   public bool IsMovePressed => isMovePressed;
@@ -112,13 +129,11 @@ public class PlayerController : MonoBehaviour, ICharacter
   public void OnJump(InputAction.CallbackContext context)
   {
     inputAction = context;
-    if (context.started)
+    
+    if (context.performed)
     {
       isJumpPressed = true;
-    }
-    else if (context.performed)
-    {
-      isJumpPressed = true;
+      if (!isFlyingTimerRunning) StartFlyingTimer();
     }
     else if (context.canceled)
     {
@@ -160,10 +175,15 @@ public class PlayerController : MonoBehaviour, ICharacter
     Destroy(projectile, 2f);
   }
 
-  // TODO: Not needed?
-  public void OnAnimationEnd(string name)
+  private async void StartFlyingTimer()
   {
-    // state.OnAnimationEnd(name);
+    // TODO - figure out how to regenerate flying stamina if button input is cancelled before stamina fully runs out
+    isFlyingTimerRunning = true;
+    await Task.Delay(maxFlyingTime);
+    canFly = false;
+    await Task.Delay(flyRecoveryTime);
+    canFly = true;
+    isFlyingTimerRunning = false;
   }
 
   public void SetState(ICharacterState state)

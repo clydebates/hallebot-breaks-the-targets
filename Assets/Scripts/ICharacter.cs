@@ -27,5 +27,7 @@ namespace OpSpark
         float SlideSpeed { get; }
         bool CanJump { get; }
         bool CanFly { get; }
+        bool CanSlide { get; }
+        float FlyForce { get; }
     }
 }

@@ -971,7 +971,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2024267054}
   - {fileID: 972816169}
   - {fileID: 1601972945}
   m_Father: {fileID: 142822524}
@@ -2038,15 +2037,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireSpawnPoint: {fileID: 729258701}
-  prefabFireball: {fileID: 1779337904253830704, guid: eca286e30edf3475da9f68378f1d1879, type: 3}
-  rateOfAcceleration: 0
-  jumpForce: 17
-  maxJumpDuration: 0.5
-  rateOfJumpingAcceleration: 1.53
-  antiGravity: 5.06
-  snapBackRate: 0.226
+  prefabFireball: {fileID: 1779337904253830704, guid: 4179583ff634a431eba985b15752a9e9, type: 3}
   canJump: 0
+  canSlide: 0
   canFly: 1
+  rateOfAcceleration: 0
+  jumpForce: 10
+  maxJumpDuration: 0.5
+  rateOfJumpingAcceleration: 2.16
+  antiGravity: 8.41
+  snapBackRate: 0.226
+  flyForce: 11
+  maxFlyingTime: 1000
+  flyRecoveryTime: 2000
   slideSpeed: 0.66
 --- !u!114 &726233957
 MonoBehaviour:
@@ -2181,11 +2184,11 @@ Rigidbody2D:
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
+  m_UseAutoMass: 1
+  m_Mass: 1.9143916
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 8
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -2229,7 +2232,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.04197383, y: -0.57784426}
+  m_Offset: {x: 0.04197383, y: -0.015763879}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2240,7 +2243,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.3361592, y: 0.30859637}
+  m_Size: {x: 1.3361592, y: 1.4327571}
   m_EdgeRadius: 0
 --- !u!95 &726233960
 Animator:
@@ -2358,8 +2361,8 @@ Transform:
   m_GameObject: {fileID: 729258701}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77, y: -0.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.132, y: -0.039, z: 0}
+  m_LocalScale: {x: 1.0354, y: 1.0354, z: 1.0354}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 726233962}
@@ -2887,14 +2890,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireSpawnPoint: {fileID: 1400529754}
   prefabFireball: {fileID: 1779337904253830704, guid: eca286e30edf3475da9f68378f1d1879, type: 3}
+  canJump: 1
+  canSlide: 1
+  canFly: 0
   rateOfAcceleration: 0
   jumpForce: 17
   maxJumpDuration: 0.5
   rateOfJumpingAcceleration: 1.53
   antiGravity: 5.06
   snapBackRate: 0.226
-  canJump: 1
-  canFly: 0
+  flyForce: 15
+  maxFlyingTime: 1
+  flyRecoveryTime: 3
   slideSpeed: 0.66
 --- !u!61 &795688359
 BoxCollider2D:
@@ -3552,10 +3559,11 @@ Transform:
   m_GameObject: {fileID: 972816167}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.6, y: 10.3, z: 0}
+  m_LocalPosition: {x: 38.7, y: 12.2, z: 0}
   m_LocalScale: {x: 6.6794605, y: 6.6794605, z: 6.6794605}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2024267054}
   m_Father: {fileID: 349723723}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1029111558 stripped
@@ -4422,7 +4430,7 @@ GameObject:
   - component: {fileID: 1601972945}
   - component: {fileID: 1601972946}
   m_Layer: 0
-  m_Name: SaggitariusC
+  m_Name: SpaceBackground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4437,8 +4445,8 @@ Transform:
   m_GameObject: {fileID: 1601972944}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.9961947, z: -0, w: -0.08715578}
-  m_LocalPosition: {x: 11, y: 4.4, z: 0}
-  m_LocalScale: {x: 8.987485, y: 8.987485, z: 8.987485}
+  m_LocalPosition: {x: 12.6, y: 4.5, z: 0}
+  m_LocalScale: {x: 4.5168934, y: 4.5168934, z: 4.5168934}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 349723723}
@@ -4484,8 +4492,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 20e888da8895148cabe7ac282897522f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6e5d13e01a6c44d5e9908aa8a48390fe, type: 3}
+  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5012,8 +5020,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: -0.002699852, y: 0.00274992, z: 0}
-    m_Extent: {x: 4.7781, y: 4.78465, z: 0}
+    m_Center: {x: -0.0037999153, y: 0.00020003319, z: 0}
+    m_Extent: {x: 4.7833, y: 4.7748003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -5065,11 +5073,11 @@ Transform:
   m_GameObject: {fileID: 2024267052}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.21, y: 9.66, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.1063769, y: -0.09581618, z: 0}
+  m_LocalScale: {x: 0.1497127, y: 0.1497127, z: 0.1497127}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 349723723}
+  m_Father: {fileID: 972816169}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030270347
 GameObject:

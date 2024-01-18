@@ -30,8 +30,6 @@ namespace OpSpark
         // character.Animator.ResetTrigger(Strings.JUMP);
     }
 
-    public override void Climb() { /* do nothing */ }
-
     public override void Update()
     {
       base.Update();
