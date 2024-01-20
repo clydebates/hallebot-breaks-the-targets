@@ -10,10 +10,13 @@ public class GameManager : MonoBehaviour
   // Set correct transform to the Follow property on the FollowCamera
   public static GameManager Instance;
   public static event Action OnPlayerDeath;
+  private int gameScore = 10;
 
   [SerializeField] GameObject hallebot;
   [SerializeField] GameObject spaceman;
   [SerializeField] CinemachineVirtualCamera followCamera;
+
+  public int GameScore { get => gameScore; }
 
   void Awake()
   {
@@ -53,5 +56,10 @@ public class GameManager : MonoBehaviour
         followCamera.Follow = hallebot.transform;
         break;
     }
+  }
+
+  public int DecrementGameScore()
+  {
+    return --gameScore;
   }
 }

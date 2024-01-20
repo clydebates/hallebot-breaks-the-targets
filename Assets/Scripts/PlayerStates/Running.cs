@@ -30,12 +30,10 @@ namespace OpSpark
     public override void Update()
     {
       base.Update();
-      // running
-      float directionX = character.DirectionX;
-      character.Transform.localScale = new Vector2(directionX, 1f);
+      character.Transform.localScale = new Vector2(character.DirectionX, 1f);
 
       UpdateAcceleration();
-      float toX = rateOfMovement * acceleration * directionX;
+      float toX = rateOfMovement * acceleration * character.DirectionX;
       Rigidbody2D rb = character.Rigidbody2D;
       rb.velocity = new Vector2(toX, rb.velocity.y);
     }

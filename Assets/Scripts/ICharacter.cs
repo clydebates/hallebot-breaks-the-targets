@@ -15,7 +15,7 @@ namespace OpSpark
         InputAction.CallbackContext InputAction { get; }
         GameObject FireSpawnPoint { get; } 
         GameObject PrefabFireball { get; }
-        float DirectionX { get; }
+        float DirectionX { get; set; }
         bool IsMovePressed { get; }
         bool IsJumpPressed { get; }
         bool IsFirePressed { get; }

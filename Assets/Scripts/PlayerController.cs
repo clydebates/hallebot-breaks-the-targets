@@ -61,7 +61,6 @@ public class PlayerController : MonoBehaviour, ICharacter
   public InputAction.CallbackContext InputAction => inputAction;
   public GameObject FireSpawnPoint => fireSpawnPoint;
   public GameObject PrefabFireball => prefabFireball;
-  public float DirectionX => directionX;
   //Jumping params
   public float JumpForce => jumpForce;
   public float MaxJumpDuration => maxJumpDuration;
@@ -79,6 +78,8 @@ public class PlayerController : MonoBehaviour, ICharacter
   public bool IsJumpPressed => isJumpPressed;
   // Wall Sliding/Jump 
   public float SlideSpeed => slideSpeed;
+
+  public float DirectionX { get => directionX; set => directionX = value; }
 
   void Awake()
   {
@@ -161,6 +162,7 @@ public class PlayerController : MonoBehaviour, ICharacter
   // OR from Sliding state
   public void OnFireAway()
   {
+    transform.localScale = new Vector2(directionX, 1f);
     // instantiate prefab
     GameObject projectile = Instantiate(
         prefabFireball, 

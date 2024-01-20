@@ -26,8 +26,8 @@ namespace OpSpark
 
     public override void Exit()
     {
+        character.Animator.ResetTrigger(Strings.JUMP);
         base.Exit();
-        // character.Animator.ResetTrigger(Strings.JUMP);
     }
 
     public override void Update()

@@ -45,6 +45,7 @@ namespace OpSpark
     {
       base.Enter();
       character.Transform.localScale = new Vector2(-character.Transform.localScale.x, 1f);
+      character.DirectionX = character.Transform.localScale.x;
       character.Animator.SetBool(Strings.IS_SLIDING, true);
     }
 
