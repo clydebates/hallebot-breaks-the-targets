@@ -1,16 +1,15 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using OpSpark;
-using UnityEditor.ShaderGraph.Internal;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using System.Collections;
+using System.Threading.Tasks;
+
 
 public class PlayerController : MonoBehaviour, ICharacter
 {
   [Header("Required Game Objects")]
   [SerializeField] GameObject fireSpawnPoint;
-  [SerializeField] GameObject prefabFireball; 
+  [SerializeField] GameObject prefabFireball;
 
   [Header("Character Abilities")]
   [SerializeField] bool canJump = true;
@@ -18,24 +17,23 @@ public class PlayerController : MonoBehaviour, ICharacter
   [SerializeField] bool canFly = false;
 
   [Header("Movement Params")]
-  [SerializeField] [Range(1, 10)] float rateOfAcceleration;
+  [SerializeField][Range(1, 10)] float rateOfAcceleration;
 
   [Header("Jumping Params")]
   [SerializeField] float jumpForce = 15;
   [SerializeField] float maxJumpDuration;
-  [SerializeField] [Range(1, 10)] float rateOfJumpingAcceleration = 5f;
-  [SerializeField] [Range(1, 10)] float antiGravity = 7;
-  [SerializeField] [Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
+  [SerializeField][Range(1, 10)] float rateOfJumpingAcceleration = 5f;
+  [SerializeField][Range(1, 10)] float antiGravity = 7;
+  [SerializeField][Range(0.1f, 0.7f)] float snapBackRate = 0.3f;
 
   [Header("Flying Params")]
   [SerializeField] float flyForce;
-  [SerializeField] int maxFlyingTime;
-  [SerializeField] int flyRecoveryTime;
-  private int flyStamina = 0;
+  [SerializeField] private int maxFlyingTime = 2000;
+  [SerializeField] private int flyRecoveryTime = 1500;
   private bool isFlyingTimerRunning = false;
 
   [Header("Wall Slide Params")]
-  [SerializeField] [Range(0.1f, 3f)] float slideSpeed;
+  [SerializeField][Range(0.1f, 3f)] float slideSpeed;
 
   float directionX = 1f;
   Vector2 inputMovement;
@@ -44,6 +42,7 @@ public class PlayerController : MonoBehaviour, ICharacter
   bool isJumpPressed = false;
   bool isFirePressed = false;
   InputAction.CallbackContext inputAction;
+  PlayerAudio playerAudio;
 
   // [Header("Jumping Params")]
 
@@ -80,57 +79,58 @@ public class PlayerController : MonoBehaviour, ICharacter
   public float SlideSpeed => slideSpeed;
 
   public float DirectionX { get => directionX; set => directionX = value; }
+  public PlayerAudio PlayerAudio { get => playerAudio; }
 
   void Awake()
   {
     rb = GetComponent<Rigidbody2D>();
     animator = GetComponent<Animator>();
     feet = GetComponent<BoxCollider2D>();
-    // TODO: grab user's character selection from gamemanager
+    playerAudio = GetComponent<PlayerAudio>();
   }
 
   void Start()
   {
-      state = new Idling(this);
+    state = new Idling(this);
   }
 
   void Update()
   {
-      state.Update();
+    state.Update();
   }
 
   public void OnMove(InputAction.CallbackContext context)
   {
-      /*
-      * The Move action produces a Vector2 (x, y), registering x and y axis input.
-      */
-      inputAction = context;
-      inputMovement = context.ReadValue<Vector2>();
+    /*
+    * The Move action produces a Vector2 (x, y), registering x and y axis input.
+    */
+    inputAction = context;
+    inputMovement = context.ReadValue<Vector2>();
 
-      if (inputMovement.x != 0)
+    if (inputMovement.x != 0)
+    {
+      directionX = inputMovement.x > 0 ? 1 : -1;
+      if (context.started)
       {
-        directionX = inputMovement.x > 0 ? 1 : -1;
-        if(context.started)
-        {
-          isMovePressed = true;
-        }
-        else if (context.performed)
-        {
-          isMovePressed = true;
-        }
+        isMovePressed = true;
       }
+      else if (context.performed)
+      {
+        isMovePressed = true;
+      }
+    }
 
-      if (context.canceled)
-      {
-        // movement should end //
-        isMovePressed = false;
-      }
+    if (context.canceled)
+    {
+      // movement should end //
+      isMovePressed = false;
+    }
   }
 
   public void OnJump(InputAction.CallbackContext context)
   {
     inputAction = context;
-    
+
     if (context.performed)
     {
       isJumpPressed = true;
@@ -142,7 +142,8 @@ public class PlayerController : MonoBehaviour, ICharacter
     }
   }
 
-  public void OnFire(InputAction.CallbackContext context) { 
+  public void OnFire(InputAction.CallbackContext context)
+  {
     inputAction = context;
     if (context.started)
     {
@@ -165,24 +166,26 @@ public class PlayerController : MonoBehaviour, ICharacter
     transform.localScale = new Vector2(directionX, 1f);
     // instantiate prefab
     GameObject projectile = Instantiate(
-        prefabFireball, 
-        fireSpawnPoint.transform.position, 
+        prefabFireball,
+        fireSpawnPoint.transform.position,
         Quaternion.identity);
+
+    playerAudio.PlayLaserSound();
 
     Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
     // TODO: make projectile velocity a SerializeField
     rb.velocity = fireSpawnPoint.transform.right * 20f * transform.localScale.x;
     // destroy object after certain amount of time
     // Destroy(projectile, lifespan);
-    Destroy(projectile, 2f);
+    Destroy(projectile, 0.5f);
   }
 
   private async void StartFlyingTimer()
   {
-    // TODO - figure out how to regenerate flying stamina if button input is cancelled before stamina fully runs out
     isFlyingTimerRunning = true;
     await Task.Delay(maxFlyingTime);
     canFly = false;
+    FxManager.Instance.JetpackDead(flyRecoveryTime / 1000);
     await Task.Delay(flyRecoveryTime);
     canFly = true;
     isFlyingTimerRunning = false;
@@ -190,8 +193,8 @@ public class PlayerController : MonoBehaviour, ICharacter
 
   public void SetState(ICharacterState state)
   {
-      this.state.Exit();
-      this.state = state;
-      this.state.Enter();
+    this.state.Exit();
+    this.state = state;
+    this.state.Enter();
   }
 }

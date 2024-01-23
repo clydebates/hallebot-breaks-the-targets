@@ -1,31 +1,38 @@
 using System;
 using Cinemachine;
+using OpSpark;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-  // TODO: Character select
-  // Enable chosen character Game Object on/before main scene load
-  // Set correct transform to the Follow property on the FollowCamera
   public static GameManager Instance;
   public static event Action OnPlayerDeath;
-  private int gameScore = 10;
+  private int gameScore;
+  private BackgroundAudio backgroundAudio;
 
   [SerializeField] GameObject hallebot;
   [SerializeField] GameObject spaceman;
+  [SerializeField] GameObject mainCamera;
   [SerializeField] CinemachineVirtualCamera followCamera;
 
   public int GameScore { get => gameScore; }
 
   void Awake()
   {
-    Instance = this;
+    if (Instance == null)
+    {
+      Instance = this;
+    }
+
+    gameScore = GameObject.FindGameObjectsWithTag(Strings.TARGET).Length;
+    backgroundAudio = mainCamera.GetComponent<BackgroundAudio>();
     SetCharacter(LobbyManager.Instance.CharacterSelection);
   }
 
   public void GameOver()
   {
+    backgroundAudio.MusicFadeOut(0.5f);
     OnPlayerDeath?.Invoke();
   }
 
@@ -50,16 +57,19 @@ public class GameManager : MonoBehaviour
         spaceman.SetActive(true);
         followCamera.Follow = spaceman.transform;
         break;
-      default:
-        spaceman.SetActive(false);
-        hallebot.SetActive(true);
-        followCamera.Follow = hallebot.transform;
-        break;
     }
   }
 
   public int DecrementGameScore()
   {
-    return --gameScore;
+    --gameScore;
+    if (gameScore == 0) YouWin();
+    return gameScore;
+  }
+
+  private void YouWin()
+  {
+    backgroundAudio.MusicFadeOut(0.5f);
+    SceneManager.LoadScene(Strings.WIN);
   }
 }

@@ -17,14 +17,14 @@ public class BackgroundAudio : MonoBehaviour
     if (BgIntro == null && BgLoop == null) return;
 
     audioSources = GetComponents<AudioSource>();
-    for (int i = 0; i< audioSources.Length; i++)
+    for (int i = 0; i < audioSources.Length; i++)
     {
       audioSources[i].loop = false;
       audioSources[i].volume = 1;
       audioSources[i].pitch = 1f;
     }
     audioSource1 = audioSources[0];
-    if (audioSources.Length > 1) audioSource2 = audioSources[1]; 
+    if (audioSources.Length > 1) audioSource2 = audioSources[1];
     PlayBgLoop();
   }
 
@@ -46,12 +46,18 @@ public class BackgroundAudio : MonoBehaviour
     audioSource2.PlayDelayed(audioSource1.clip.length);
   }
 
-  public void MusicFadeOut()
+  public void MusicFadeOut(float fadeSpeed)
   {
     if (audioSource1 == null) return;
 
-    if (audioSource1.isPlaying) StartCoroutine(FadeOut(audioSource1, 2.5f));
-    if (audioSource2 != null && audioSource2.isPlaying) StartCoroutine(FadeOut(audioSource2, 2.5f));
+    if (audioSource1.isPlaying) StartCoroutine(FadeOut(audioSource1, fadeSpeed));
+    if (audioSource2 != null && audioSource2.isPlaying) StartCoroutine(FadeOut(audioSource2, fadeSpeed));
+  }
+
+  public void MusicFadeOut()
+  {
+    // default method
+    MusicFadeOut(2.5f);
   }
 
   private IEnumerator FadeOut(AudioSource audioSource, float fadeSpeed)

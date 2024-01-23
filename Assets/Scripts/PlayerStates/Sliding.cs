@@ -12,7 +12,7 @@ namespace OpSpark
 
     public Sliding(ICharacter character) : base(character) { }
 
-    public override void Slide() {}
+    public override void Slide() { }
 
     public override void Fire()
     {
@@ -57,13 +57,13 @@ namespace OpSpark
 
     public override void Exit()
     {
-        character.Animator.SetBool(Strings.IS_SLIDING, false);
-        base.Exit();
+      character.Animator.SetBool(Strings.IS_SLIDING, false);
+      base.Exit();
     }
 
     private void PerformSlide()
     {
       character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, Mathf.Clamp(character.Rigidbody2D.velocity.y, -character.SlideSpeed, float.MaxValue));
-    }     
+    }
   }
 }

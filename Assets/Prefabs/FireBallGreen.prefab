@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1218897938326265127}
   - component: {fileID: 1483300542633638104}
   - component: {fileID: 4564430471475554366}
-  - component: {fileID: 3444273117045419349}
   - component: {fileID: 5971972262297781219}
+  - component: {fileID: 7126967099066182939}
   m_Layer: 0
   m_Name: FireBallGreen
   m_TagString: Projectile
@@ -96,14 +96,14 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779337904253830704}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -114,19 +114,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!114 &3444273117045419349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779337904253830704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 978bd27355b604ec3815f0768e9c9a56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Constraints: 2
 --- !u!58 &5971972262297781219
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -162,6 +150,18 @@ CircleCollider2D:
   m_Offset: {x: -0.013651848, y: 0}
   serializedVersion: 2
   m_Radius: 6.2698603
+--- !u!114 &7126967099066182939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1779337904253830704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52775f36d69bc4923a124ef7322512f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5895885261949916880
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,8 +228,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.75
   m_LocalBounds:
-    m_Center: {x: 0.024100006, y: -0.07824999, z: 0}
-    m_Extent: {x: 1.3327999, y: 1.3434501, z: 0}
+    m_Center: {x: 0.0194, y: -0.08284998, z: 0}
+    m_Extent: {x: 1.3335, y: 1.34145, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0

@@ -15,24 +15,24 @@ namespace OpSpark
     // Constructor
     public ACharacterState(ICharacter character)
     {
-        this.character = character;
-        this._name = this.GetType().Name;
+      this.character = character;
+      this._name = this.GetType().Name;
     }
 
     // Methods
     public virtual void Enter()
     {
-        Debug.Log($"Entering state {_name}");
+      Debug.Log($"Entering state {_name}");
     }
 
     public virtual void Exit()
     {
-        Debug.Log($"Exiting state {_name}");
+      Debug.Log($"Exiting state {_name}");
     }
 
     public virtual void Fire()
     {
-        character.SetState(new Firing(character));
+      character.SetState(new Firing(character));
     }
 
     public virtual void Idle()
@@ -100,12 +100,12 @@ namespace OpSpark
       // Debug.Log($"Animation {name} ended");
     }
 
-    protected bool IsTouchingPlatform() 
+    protected bool IsTouchingPlatform()
     {
       return character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM));
     }
 
-    protected bool IsTouchingWall() 
+    protected bool IsTouchingWall()
     {
       if (!IsTouchingPlatform())
       {
