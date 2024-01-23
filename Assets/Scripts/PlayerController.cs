@@ -50,12 +50,14 @@ public class PlayerController : MonoBehaviour, ICharacter
   Rigidbody2D rb;
   Animator animator;
   BoxCollider2D feet;
+  CapsuleCollider2D body;
 
   // Public Interface Members
   public Transform Transform => transform;
   public Animator Animator => animator;
   public Rigidbody2D Rigidbody2D => rb;
   public BoxCollider2D Feet => feet;
+  public CapsuleCollider2D Body => body;
   public Vector2 InputMovement => inputMovement;
   public InputAction.CallbackContext InputAction => inputAction;
   public GameObject FireSpawnPoint => fireSpawnPoint;
@@ -86,6 +88,7 @@ public class PlayerController : MonoBehaviour, ICharacter
     rb = GetComponent<Rigidbody2D>();
     animator = GetComponent<Animator>();
     feet = GetComponent<BoxCollider2D>();
+    body = GetComponent<CapsuleCollider2D>();
     playerAudio = GetComponent<PlayerAudio>();
   }
 
@@ -134,7 +137,7 @@ public class PlayerController : MonoBehaviour, ICharacter
     if (context.performed)
     {
       isJumpPressed = true;
-      if (!isFlyingTimerRunning) StartFlyingTimer();
+      if (canFly && !isFlyingTimerRunning) StartFlyingTimer();
     }
     else if (context.canceled)
     {

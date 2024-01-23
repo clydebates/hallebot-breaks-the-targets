@@ -5,6 +5,7 @@ public class PlayerAudio : MonoBehaviour
   [Header("SFX Tracks")]
   [SerializeField] AudioClip laserSound;
   [SerializeField] AudioClip jetpackTakeoff;
+  readonly float laserVolume = 0.5f;
 
   private AudioSource audioSource;
 
@@ -16,17 +17,10 @@ public class PlayerAudio : MonoBehaviour
 
   public void PlayLaserSound()
   {
-    audioSource.clip = laserSound;
-    PlayLaserSound(1f, 1f);
-  }
-
-  public void PlayLaserSound(float volume, float pitch)
-  {
     if (laserSound != null)
     {
       audioSource.clip = laserSound;
-      audioSource.volume = volume;
-      audioSource.pitch = pitch;
+      audioSource.volume = laserVolume;
       audioSource.Play();
     }
   }
@@ -42,7 +36,7 @@ public class PlayerAudio : MonoBehaviour
 
   public void CancelJumpSound()
   {
-    if (audioSource.isPlaying && audioSource.clip == jetpackTakeoff)
+    if (audioSource.isPlaying)
     {
       audioSource.Stop();
     }

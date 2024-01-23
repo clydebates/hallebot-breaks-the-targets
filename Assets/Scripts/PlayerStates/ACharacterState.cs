@@ -84,7 +84,7 @@ namespace OpSpark
       {
         Slide();
       }
-      else if (character.IsMovePressed)
+      else if (character.IsMovePressed && !IsBodyTouchingPlatform())
       {
         Run();
       }
@@ -105,12 +105,17 @@ namespace OpSpark
       return character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM));
     }
 
+    protected bool IsBodyTouchingPlatform()
+    {
+      return character.Body.IsTouchingLayers(LayerMask.GetMask(Strings.PLATFORM));
+    }
+
     protected bool IsTouchingWall()
     {
       if (!IsTouchingPlatform())
       {
         // TODO: layerMask filter is not working
-        if (character.Feet.IsTouchingLayers(LayerMask.GetMask(Strings.WALL)))
+        if (character.Body.IsTouchingLayers(LayerMask.GetMask(Strings.WALL)))
         {
           return true;
         }

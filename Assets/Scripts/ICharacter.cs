@@ -11,6 +11,7 @@ namespace OpSpark
     Animator Animator { get; }
     Rigidbody2D Rigidbody2D { get; }
     BoxCollider2D Feet { get; }
+    CapsuleCollider2D Body { get; }
     Vector2 InputMovement { get; }
     InputAction.CallbackContext InputAction { get; }
     GameObject FireSpawnPoint { get; }

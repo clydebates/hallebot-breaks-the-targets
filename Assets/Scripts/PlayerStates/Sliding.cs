@@ -9,10 +9,12 @@ namespace OpSpark
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
     private float canJump = 0;
     private float maxJumpTime = 0.3f;
+    private bool isWallJumping = false;
 
     public Sliding(ICharacter character) : base(character) { }
 
     public override void Slide() { }
+    public override void Run() { }
 
     public override void Fire()
     {
@@ -31,12 +33,13 @@ namespace OpSpark
       // wall jumping
       if (Time.time > canJump)
       {
-        // allow holding the button to fire once every half second
+        isWallJumping = true;
         character.Rigidbody2D.velocity = new Vector2(character.Transform.localScale.x * wallJumpingPower.x, wallJumpingPower.y);
         canJump = Time.time + maxJumpTime;
       }
       else
       {
+        isWallJumping = false;
         Idle();
       }
     }
@@ -51,7 +54,7 @@ namespace OpSpark
 
     public override void Update()
     {
-      PerformSlide();
+      if (!isWallJumping) PerformSlide();
       base.Update();
     }
 
@@ -63,7 +66,7 @@ namespace OpSpark
 
     private void PerformSlide()
     {
-      character.Rigidbody2D.velocity = new Vector2(character.Rigidbody2D.velocity.x, Mathf.Clamp(character.Rigidbody2D.velocity.y, -character.SlideSpeed, float.MaxValue));
+      character.Rigidbody2D.velocity = new Vector2(0, Mathf.Clamp(character.Rigidbody2D.velocity.y, -character.SlideSpeed, float.MaxValue));
     }
   }
 }
