@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class MovingPlatformController : MonoBehaviour
@@ -10,7 +11,7 @@ public class MovingPlatformController : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-      targetPos = pos2.transform.position;
+    targetPos = pos2.transform.position;
   }
 
   // Update is called once per frame

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Projectile
   - Target
+  - GameBorder
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Void
+    uniqueID: 2695821681
     locked: 0
   - name: Horizon
     uniqueID: 34036837

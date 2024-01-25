@@ -17,7 +17,8 @@ public class PlayerController : MonoBehaviour, ICharacter
   [SerializeField] bool canFly = false;
 
   [Header("Movement Params")]
-  [SerializeField][Range(1, 10)] float rateOfAcceleration;
+  [SerializeField][Range(1, 20)] float rateOfAcceleration;
+  [SerializeField][Range(1, 20)] float rateOfMovement;
 
   [Header("Jumping Params")]
   [SerializeField] float jumpForce = 15;
@@ -82,6 +83,8 @@ public class PlayerController : MonoBehaviour, ICharacter
 
   public float DirectionX { get => directionX; set => directionX = value; }
   public PlayerAudio PlayerAudio { get => playerAudio; }
+  public float RateOfMovement { get => rateOfMovement; }
+  public float RateOfAcceleration { get => rateOfAcceleration; }
 
   void Awake()
   {

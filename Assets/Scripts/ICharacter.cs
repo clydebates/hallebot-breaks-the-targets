@@ -18,6 +18,8 @@ namespace OpSpark
     GameObject PrefabFireball { get; }
     PlayerAudio PlayerAudio { get; }
     float DirectionX { get; set; }
+    float RateOfAcceleration { get; }
+    float RateOfMovement { get; }
     bool IsMovePressed { get; }
     bool IsJumpPressed { get; }
     bool IsFirePressed { get; }

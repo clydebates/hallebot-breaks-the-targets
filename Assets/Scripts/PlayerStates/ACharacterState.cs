@@ -65,10 +65,19 @@ namespace OpSpark
       character.SetState(new Flying(character));
     }
 
+    public virtual void Dead()
+    {
+      character.SetState(new Dead(character));
+    }
+
     public virtual void Update()
     {
       // switch states depending on the input action
-      if (character.IsFirePressed)
+      if (GameManager.Instance.IsPlayerDead)
+      {
+        Dead();
+      }
+      else if (character.IsFirePressed)
       {
         Fire();
       }

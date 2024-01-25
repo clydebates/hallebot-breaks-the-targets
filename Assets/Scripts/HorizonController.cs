@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class HorizonController : MonoBehaviour
 {
-    void OnTriggerEnter2D(Collider2D collider)
+  void OnTriggerEnter2D(Collider2D collider)
+  {
+    if (collider.gameObject.CompareTag("Player"))
     {
-      if (collider.gameObject.CompareTag("Player"))
-      {
-        GameManager.Instance.GameOver();
-      }
+      GameManager.Instance.Death();
     }
+  }
 }

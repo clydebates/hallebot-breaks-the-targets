@@ -1,13 +1,13 @@
-using System;
 using Cinemachine;
 using OpSpark;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : TransitionManager
 {
   public static GameManager Instance;
-  public static event Action OnPlayerDeath;
+  public bool IsPlayerDead = false;
+
   private int gameScore;
   private BackgroundAudio backgroundAudio;
 
@@ -30,15 +30,26 @@ public class GameManager : MonoBehaviour
     SetCharacter(LobbyManager.Instance.CharacterSelection);
   }
 
+  public void Death()
+  {
+    IsPlayerDead = true;
+    backgroundAudio.MusicFadeOut(0.5f);
+    panelFader.FadeOut(Strings.GAME_OVER);
+  }
+
   public void GameOver()
   {
-    backgroundAudio.MusicFadeOut(0.5f);
-    OnPlayerDeath?.Invoke();
+    SceneManager.LoadScene(Strings.GAME_OVER);
   }
 
   public void RestartGame()
   {
-    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    SceneManager.LoadScene(Strings.LOBBY);
+  }
+
+  public void OnClickQuit()
+  {
+    Application.Quit();
   }
 
   public void SetCharacter(int characterSelection)
