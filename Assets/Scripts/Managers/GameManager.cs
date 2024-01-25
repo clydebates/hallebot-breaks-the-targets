@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameManager : TransitionManager
 {
   public static GameManager Instance;
-  public bool IsPlayerDead = false;
+  [HideInInspector] public bool IsPlayerDead = false;
+  [HideInInspector] public float TotalGameTime;
 
   private int gameScore;
   private BackgroundAudio backgroundAudio;
@@ -80,7 +81,13 @@ public class GameManager : TransitionManager
 
   private void YouWin()
   {
+    TotalGameTime = Time.timeSinceLevelLoad;
     backgroundAudio.MusicFadeOut(0.5f);
+    panelFader.FadeOut(Strings.WIN);
+  }
+
+  public void Win()
+  {
     SceneManager.LoadScene(Strings.WIN);
   }
 }
